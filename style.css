@@ -22,6 +22,7 @@ p {font-size: 18px;}
 /* navigation area */
 .navbar {background: transparent;}
 
+
 body {background: rgb(146, 146, 146);}
 
 /* header area */
@@ -34,7 +35,11 @@ body {background: rgb(146, 146, 146);}
     text-align: center;
     color: #ffffff;
     margin-top: -56px;
-    padding: 22.1% 0;
+    height: 100vh;
+}
+
+.header {
+	padding: 22.1% 0;
 }
 
 .header h1 {
@@ -49,10 +54,6 @@ body {background: rgb(146, 146, 146);}
     font-size: 20px;
     padding-top: 15px;
     letter-spacing: 5px;
-}
-
-.header p {
-
 }
 
 /* footer area */
