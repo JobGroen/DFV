@@ -12,10 +12,12 @@ Version: 0.1
 .dark-skin { color: #DFB49B}
 
 /* standard classes */
+h1, h2, h3, .standard-h4 {font-family: 'Open Sans', sans-serif;}
+
 h1 {font-size: 60px; font-weight: 700;}
 h2 {font-size: 50px;}
 h3 {font-size: 30px;}
-p {font-size: 18px;}
+p {font-size: 18px; font-family: 'Montserrat', sans-serif;}
 
 .standard-h4 {font-size: 25px;}
 
@@ -61,3 +63,13 @@ footer {
     background: #858585;
 }
 
+/* media query's */
+@media screen and (max-width: 600px){
+    .header h1 {
+        width: 65%;
+    }
+
+    .header {
+        padding: 42.1% 0;
+    }
+}

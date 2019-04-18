@@ -7,6 +7,20 @@
     </div>
 </div>
 
+<div id="about-me">
+    <div class="container about-me">
+        <div class="row">
+            <div class="col-md-6">
+                <p><?php the_field('about_me');?></p>
+            </div>
+
+            <div class="col-md-6">
+                <p class="header-lead"><?php the_field('header_lead');?></p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container pt-5 pb-5">
 
     <?php if (have_posts()) : while(have_posts()) : the_post();?>
