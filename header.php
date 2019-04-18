@@ -5,6 +5,17 @@
 
     <?php wp_head();?>
 
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:800" rel="stylesheet">
+
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheets -->
+    <link href="css/job.css" rel="stylesheet">
+    <link href="css/jort.css" rel="stylesheet">
+    <link href="css/maarten.css" rel="stylesheet">
+
 </head>
 
 <body <?php body_class();?>>
