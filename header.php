@@ -7,10 +7,10 @@
 
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:800" rel="stylesheet">
-
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- stylesheets -->
     <link href="/css/job.css" rel="stylesheet">
     <link href="/css/jort.css" rel="stylesheet">
@@ -25,8 +25,8 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <a class="navbar-brand" href="/home">Daimond Face Visagie</a>
-                <button class="navbar-toggler" type="button" onclick="openNav()">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="overlaynav-toggle" type="button" onclick="openNav()">
+                    <i class="fas fa-bars"></i>
                 </button>
                 <div id="overlay-menu" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -40,8 +40,12 @@
 			        'menu_class'        => 'nav navbar-nav flex-column',
 			        'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 			        'walker'            => new WP_Bootstrap_Navwalker(),
-		) );
-		?>
+		            ) );
+                    ?>
+                    <div class="overlay-content-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    </div>
                 </div>
             </div>
         </nav>
