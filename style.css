@@ -17,14 +17,12 @@ h1, h2, h3, .standard-h4 {font-family: 'Open Sans', sans-serif;}
 h1 {font-size: 60px; font-weight: 700;}
 h2 {font-size: 50px;}
 h3 {font-size: 30px;}
-p {font-size: 18px; font-family: 'Montserrat', sans-serif;}
+p, a {font-size: 18px; font-family: 'Montserrat', sans-serif;}
 
 .standard-h4 {font-size: 25px;}
 
 /* navigation area */
 .navbar {background: transparent;}
-
-body {background: rgb(146, 146, 146);}
 
 /* header area */
 #header {
