@@ -1,3 +1,22 @@
+.overlaynav-toggle {
+  color: white;
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  border-radius: .25rem;
+}
+
+.overlay i{
+  font-size: 25px !important;
+  font-weight: 600 !important;
+}
+
 .overlay {
     height: 100%;
     width: 0;
@@ -14,10 +33,20 @@
   .overlay-content {
     position: relative;
     top: 25%;
-    width: 25%;
     text-align: right;
     margin-top: 30px;
     float: right;
+    margin-right: 45px;
+  }
+
+  .overlay-content-icons {
+    position: absolute;
+    top: 65%;
+    text-align: right;
+    margin-top: 30px;
+    float: right;
+    right: 60px;
+    font-size: 20px !important;
   }
   
   .overlay a {
@@ -36,11 +65,25 @@
     font-size: 60px;
     color: black !important;
   }
+
+  @media screen and (max-width: 1010px) {
+    .overlay-content {
+      top: 15%;
+    }
+    .overlay-content-icons {
+      top: 45%
+    }
+    
+  }
   
   @media screen and (max-height: 450px) {
     .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
+    }
+
+    .overlay-content {
+      right: 35px;
     }
   }
