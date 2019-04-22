@@ -1,89 +1,145 @@
 .overlaynav-toggle {
-  color: white;
+  color: black;
   padding: .25rem .75rem;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
   border-radius: .25rem;
 }
 
-.overlay i{
+.overlay i {
   font-size: 25px !important;
   font-weight: 600 !important;
 }
 
 .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-    background-color: rgba(255, 255, 255, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  text-align: right;
+  margin-top: 30px;
+  float: right;
+  margin-right: 45px;
+}
+
+.overlay-content-icons {
+  position: absolute;
+  top: 65%;
+  text-align: right;
+  margin-top: 30px;
+  float: right;
+  right: 60px;
+  font-size: 20px !important;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: black !important;
+}
+
+@media screen and (max-width: 1010px) {
   .overlay-content {
-    position: relative;
-    top: 25%;
-    text-align: right;
-    margin-top: 30px;
-    float: right;
-    margin-right: 45px;
+    top: 15%;
   }
 
   .overlay-content-icons {
-    position: absolute;
-    top: 65%;
-    text-align: right;
-    margin-top: 30px;
-    float: right;
-    right: 60px;
-    font-size: 20px !important;
-  }
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-    color: black !important;
+    top: 45%
   }
 
-  @media screen and (max-width: 1010px) {
-    .overlay-content {
-      top: 15%;
-    }
-    .overlay-content-icons {
-      top: 45%
-    }
-    
-  }
-  
-  @media screen and (max-height: 450px) {
-    .overlay .closebtn {
+}
+
+@media screen and (max-height: 450px) {
+  .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
-    }
-
-    .overlay-content {
-      right: 35px;
-    }
   }
+
+  .overlay-content {
+    right: 35px;
+  }
+}
+
+/* Image grid portfolio */
+.portfolio-quote {
+  text-align: center;
+  font-style: italic;
+}
+
+#photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 0 !important;
+}
+
+.photos-item {
+  position: relative;
+  flex-direction: row;
+  width: calc(100% / 3);
+  margin-bottom: 0 !important;
+}
+
+.img-title {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.img-title p {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .photos-item {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 400px) {
+  .photos-item {
+    width: 100%;
+  }
+}
