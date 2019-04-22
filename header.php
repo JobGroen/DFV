@@ -12,9 +12,6 @@
     <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- stylesheets -->
-    <link href="/css/job.css" rel="stylesheet">
-    <link href="/css/jort.css" rel="stylesheet">
-    <link href="/css/maarten.css" rel="stylesheet">
 
 </head>
 
