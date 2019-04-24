@@ -34,13 +34,14 @@
 
                     <div class="form-group">
                         <label for="message">Bericht:</label>
-                        <textarea class="form-control" id="message" rows="8"></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="8"></textarea>
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn standard-button contact-button mb-2">Verstuur bericht</button>
+                        <button type="submit" onclick="validateForm()" class="btn standard-button contact-button mb-2">Verstuur bericht</button>
                     </div>
                 </form>
+                <div id="status"></div>
             </div>
 
             <div class="col-md-5">
