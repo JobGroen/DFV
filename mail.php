@@ -8,7 +8,7 @@ $inputcheck = $name . $message . $subject;
 
 header('Content-Type: application/json');
 
-if (!preg_match('/^[A-Za-z0-9]+$/', $inputcheck)) {
+if (!preg_match('/^[A-Za-z0-9 ]+$/', $inputcheck)) {
     print json_encode(array('message' => 'De velden bevatten niet toegestane symbolen', 'code' => 0));
     exit();
 } 

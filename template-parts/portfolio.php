@@ -11,7 +11,7 @@
             <div class="col-lg-7">
             <img class="portfolio-image-1" src="/wp-content/uploads/2019/04/Asha-Goercharan-2-1.jpg" alt="reviews">
 
-            <img class="portfolio-image-2" src="/wp-content/uploads/2019/04/bruiloften.jpg" alt="reviews">
+            <img class="portfolio-image-2" src="/wp-content/uploads/2019/04/bruiloften-1.jpg" alt="reviews">
             </div>
         </div>
     </div>
