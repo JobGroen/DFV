@@ -12,7 +12,7 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >= $("#header").height()) {
-        $("header").addClass("scrolling");z
+        $("header").addClass("scrolling");
     } else {
         $("header").removeClass("scrolling");
     }
