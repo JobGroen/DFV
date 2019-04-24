@@ -5,14 +5,14 @@
     padding-right: 15px;
     padding-bottom: 50px;
    }
-    
+
 .contact .col-md-5 {
     padding-left: 15px;
     padding-top: 50px;
 }
 
 #aboutme .col-lg-6 p {
-    padding-right: 15px;
+    padding-right: 25px;
 }
 }
 
@@ -20,12 +20,12 @@
     .diensten .col-lg-3 .diensten-block{
         margin-bottom: 15px;
     }
-    
+
     .diensten .col-lg-3 .diensten-block p {
         padding-top: 175px;
         padding-bottom: 175px;
     }
-    
+
 }
 
 @media only screen and (max-width: 1400px){
@@ -55,7 +55,7 @@
         margin-top: -50px;
         z-index: 999;
     }
-    
+
     img.portfolio-image-2 {
         position: absolute;
         width: 325px;
