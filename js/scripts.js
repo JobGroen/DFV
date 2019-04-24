@@ -71,7 +71,7 @@ function validateForm() {
     
     
     $.ajax({
-        url: "mail.php",
+        url: "/wp-content/themes/DFV/mail.php",
         type: "POST",
         data: formData,
         success: function (data, textStatus, jqXHR) {

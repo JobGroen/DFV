@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-md navbar-light" role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand" href="/home">Daimond Face Visagie</a>
+                <a class="navbar-brand" href="/home">Pure face art</a>
                 <button class="overlaynav-toggle" type="button" onclick="openNav()">
                     <i class="fas fa-bars"></i>
                 </button>
