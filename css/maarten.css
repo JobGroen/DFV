@@ -1,7 +1,7 @@
 .overlaynav-toggle {
   color: black;
   padding: .25rem .75rem;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -10,6 +10,14 @@
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-radius: .25rem;
+}
+
+.page-id-7 .overlaynav-toggle {
+  color: white;
+}
+
+.page-id-7 .scrolling .overlaynav-toggle {
+  color:black;
 }
 
 .overlay i {
@@ -75,6 +83,25 @@
     top: 45%
   }
 
+}
+
+@media screen and (max-width: 600px) {
+  .overlay-content-icons {
+    right: 50px;
+  }
+
+}
+
+@media screen and (max-height: 670px) {
+  .overlay-content-icons {
+    top: 57%
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .overlay-content-icons {
+    top: 70%
+  }
 }
 
 @media screen and (max-height: 450px) {
