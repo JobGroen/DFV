@@ -11,10 +11,16 @@ body {
     overflow-x: hidden;
 }
 
+img.about-me-picture-mobile, .portfolio-image-mobile {
+    display: none;
+}
 
-.about-me-picture img {
-    width: 500px;
-    margin: -425px 0 0 40px;
+
+img.about-me-picture{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    margin-left: 40px;
 }
 
 .standard-button {
@@ -45,8 +51,9 @@ body {
 
 #portfolio {
     background-color: #EDDBCC;
-    margin-top: 150px;
     padding: 0 0 75px 0;
+    margin-top: 300px;
+    margin-bottom: 300px;
 }
 
 .diensten {
@@ -62,7 +69,23 @@ body {
     letter-spacing: 2.5px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('/wp-content/uploads/2019/04/asha.png');
+    background-position: center;
+}
+
+.diensten .col-lg-3 .diensten-bruiloften {
+    background-image: url('/wp-content/uploads/2019/04/bruiloften.jpg');
+}
+
+.diensten .col-lg-3 .diensten-videoclips {
+    background-image: url('/wp-content/uploads/2019/04/videoclips.jpg');
+}
+
+.diensten .col-lg-3 .diensten-feestjes {
+    background-image: url('/wp-content/uploads/2019/04/Feestjes.jpg');
+}
+
+.diensten .col-lg-3 .diensten-wenkbrouwen {
+    background-image: url('/wp-content/uploads/2019/04/Wenkbrouwen-wimpers.jpg');
 }
 
 .diensten .col-lg-3 .diensten-block p {
@@ -103,6 +126,7 @@ body {
 
 .contact {
     padding-top: 30px; 
+    padding-right: 30px;
     padding-bottom: 50px;
 }
 
@@ -143,7 +167,7 @@ ul.footer-text li a:hover {
     transform: scaleX(-1)!important;
 }
 
-p, a, input, textarea, label, li {font-size: 18px; font-family: 'Montserrat', sans-serif;}
+p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sans-serif;}
 
 .contact input {
     height: 50px;
@@ -171,18 +195,51 @@ p, a, input, textarea, label, li {font-size: 18px; font-family: 'Montserrat', sa
 #copyright p {
     margin-bottom: 0!important;
     color: #d6d3d3;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 #copyright a {
     color: #d6d3d3;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 #copyright a:hover {
     color: #d6d3d3;
     text-decoration: none;
+}
+
+#reviews .col-md-7 .container {
+    margin-left: 75px;
+}
+
+.reviews-box img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin-left: -430px;
+    margin-top: -125px;
+    object-fit: cover;
+}
+
+img.portfolio-image-1 {
+    position: absolute;
+    width: 350px;
+    height: 550px;
+    margin-top: -50px;
+    z-index: 999;
+}
+
+img.portfolio-image-2 {
+    position: absolute;
+    width: 350px;
+    height: 550px;
+    margin-top: -170px;
+    margin-left: 285px;
+}
+
+#portfolio .col-lg-5 {
+    padding-right: 75px;
 }
 
 @media only screen and (max-width:767px){
@@ -218,5 +275,131 @@ p, a, input, textarea, label, li {font-size: 18px; font-family: 'Montserrat', sa
 @media only screen and (max-width: 1400px){
     .reviews-box {
         padding: 25px 15px 75px 0px;
+    }
+
+    #reviews .col-md-7 .container {
+        margin-left: 75px;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1199px){
+    img.about-me-picture{
+        width: 425px;
+        height: 425px;
+        margin-left: -25px;
+        margin-top: 75px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    img.portfolio-image-1 {
+        position: absolute;
+        width: 325px;
+        height: 525px;
+        margin-top: -50px;
+        z-index: 999;
+    }
+    
+    img.portfolio-image-2 {
+        position: absolute;
+        width: 325px;
+        height: 525px;
+        margin-top: -170px;
+        margin-left: 210px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1099px){
+    img.about-me-picture{
+        width: 400px;
+        height: 400px;
+        margin-left: 25px;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    img.about-me-picture, img.portfolio-image-1, img.portfolio-image-2  {
+        display: none;
+    }
+
+    #portfolio {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .portfolio-image-mobile {
+        display: block;
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    #portfolio .col-lg-5 {
+        padding-right: 15px;
+    }
+
+    img.about-me-picture-mobile {
+        display: block;
+        width: 100%;
+        margin-top: 75px;
+    }
+}
+
+@media only screen and (max-width: 465px){
+    img.about-me-picture, img.portfolio-image-1, img.portfolio-image-2  {
+        display: none;
+    }
+
+    #aboutme {
+        height: 700px;
+        margin-bottom: 275px;
+    }
+
+    #portfolio {
+        margin-bottom: 250px;
+        height: 800px;
+    }
+
+    .portfolio-image-mobile {
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
+    img.about-me-picture-mobile {
+        display: block;
+        width: 100%;
+        margin-top: 75px;
+    }
+}
+
+@media only screen and (min-width: 466px) and (max-width: 767px){
+    /* #aboutme {
+        margin-bottom: 375px;
+    } */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    /* #aboutme {
+        margin-bottom: 475px;
+    } */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .reviews-box img {
+        width: 350px;
+        height: 350px;
+        margin-left: -400px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .reviews-box img {
+        display: none;
+    }
+
+    #reviews .col-md-7 .container {
+        margin-left: 0px;
     }
 }
