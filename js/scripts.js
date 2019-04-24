@@ -1,13 +1,26 @@
+/* Nav menu overlay */
 function openNav() {
     document.getElementById("overlay-menu").style.width = "100%";
-  }
+}
   
-  function closeNav() {
+function closeNav() {
     document.getElementById("overlay-menu").style.width = "0%";
-  }
+}
+
+/* Nav menu scroll effect Homepage */
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= $("#header").height()) {
+        $("header").addClass("scrolling");z
+    } else {
+        $("header").removeClass("scrolling");
+    }
+});
 
 
-  $(document).ready( function() {
+/* Portfolio page photos overlay */
+$(document).ready( function() {
 
     $('.photos-item').hover( function() {
         $(this).find('.img-title').fadeIn(300);
@@ -17,8 +30,8 @@ function openNav() {
     
 });
 
-
-  $(function() {
+/* Portfolio page category filter */
+$(function() {
     var $container = $('#photos'),
         $select = $('div#filters select');
     filters = {};
@@ -45,5 +58,30 @@ function openNav() {
 
         return false;
     });
-
 });
+
+function validateForm() {
+    document.getElementById('status').innerHTML = "Sending...";
+    formData = {
+        'name': $('input[name=name]').val(),
+        'email': $('input[name=email]').val(),
+        'subject': $('input[name=subject]').val(),
+        'message': $('textarea[name=message]').val()
+    };
+    
+    
+    $.ajax({
+        url: "mail.php",
+        type: "POST",
+        data: formData,
+        success: function (data, textStatus, jqXHR) {
+    
+            $('#status').text(data.message);
+            if (data.code)
+                $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            $('#status').text(jqXHR);
+        }
+    });
+}
