@@ -12,7 +12,7 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >= $("#header").height()) {
-        $("header").addClass("scrolling");z
+        $("header").addClass("scrolling");
     } else {
         $("header").removeClass("scrolling");
     }
@@ -71,7 +71,7 @@ function validateForm() {
     
     
     $.ajax({
-        url: "mail.php",
+        url: "/wp-content/themes/DFV/mail.php",
         type: "POST",
         data: formData,
         success: function (data, textStatus, jqXHR) {

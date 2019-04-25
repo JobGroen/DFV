@@ -4,6 +4,13 @@ Author: Mediacollege Examengroep C1.1
 Version: 0.1.9
 */
 
+/* body */
+body { overflow-x: hidden;}
+
+/* a */
+a { color: #000000; text-decoration: underline;}
+a:hover { color: #000000;}
+
 /* colors */
 .black { color: #000000}
 .white { color: #ffffff}
@@ -12,48 +19,78 @@ Version: 0.1.9
 .dark-skin { color: #DFB49B}
 
 /* standard classes */
-h1, h2, h3, .standard-h4 {font-family: 'Open Sans', sans-serif;}
-
+h1, h2, h3, .standard-h4, li a {font-family: 'Open Sans', sans-serif;}
 h1 {font-size: 60px; font-weight: 700;}
 h2 {font-size: 50px;}
 h3 {font-size: 30px;}
-p, a {font-size: 16px; font-family: 'Montserrat', sans-serif;}
 
-.standard-h4 {font-size: 25px;}
+#menu-navigation li a {font-weight: 700; color: #000000!important;}
+p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sans-serif;}
+
+.standard-h4 { font-size: 25px;}
+
+#diensten h2, #contact h2, #reviews h2, #portfolio h2 { margin-top: -35px;}
+
+.standard-button { border: 2px solid #000000; text-decoration: none; border-radius: 5px; padding: 10px 30px; color: #000000; transition: .3s ease;}
+.standard-button::after { content: ">"; margin: 0 2.5px 0 20px;}
+.standard-button:hover { background: #000000; text-decoration: none; color: #ffffff; transform: scale(1.05)!important;}
 
 /* navigation area */
-.navbar {background: transparent;}
+.navbar { background: transparent;}
+.overlaynav-toggle:focus { outline: 0;}
+.fa-bars {font-size: 30px;  }
 
 /* header area */
-#header {
-    background-image: url("/wp-content/uploads/2019/04/header.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-transform: uppercase;
-    text-align: center;
-    color: #ffffff;
-    margin-top: -56px;
-    height: 100vh;
-}
+#header { background-image: url("/wp-content/uploads/2019/04/header.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; text-transform: uppercase; text-align: center; color: #ffffff; margin-top: -56px; height: 100vh;}
 
-.header {
-	padding: 22.1% 0;
-}
+.header { padding: 22.1% 0; background-repeat: no-repeat; background-size: cover; background-position: center}
+.header h1 { margin: 0 auto; width: 50%; padding: 20px; letter-spacing: 15px; border: 2px solid #ffffff; }
+.header-lead { font-size: 20px; padding-top: 15px; letter-spacing: 5px; }
 
-.header h1 {
-    margin: 0 auto;
-    width: 45%;
-    padding: 20px;
-    letter-spacing: 15px;
-    border: 2px solid #ffffff;
-}
+/* aboutme area */
+#aboutme { background-color: #EDDBCC; padding: 75px 0;}
+#aboutme .col-lg-6 p { padding-right: 60px;}
+img.about-me-picture-mobile { display: none;}
+img.about-me-picture{ width: 450px; height: 450px; position: absolute; margin-left: 40px;}
 
-.header-lead {
-    font-size: 20px;
-    padding-top: 15px;
-    letter-spacing: 5px;
-}
+/* diensten area */
+#diensten { background-color: #EDDBCC; height: 200px; margin-top: 150px;}
+.diensten { margin-top: -150px;}
+.diensten .diensten-block{ height: 350px; text-align: center; color: #ffffff; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; background-size: cover; background-repeat: no-repeat; background-position: center;}
+.diensten .diensten-bruiloften { background-image: url('/wp-content/uploads/2019/04/bruiloften.jpg');}
+.diensten .diensten-videoclips { background-image: url('/wp-content/uploads/2019/04/videoclips.jpg');}
+.diensten .diensten-feestjes { background-image: url('/wp-content/uploads/2019/04/Feestjes.jpg');}
+.diensten .diensten-wenkbrouwen { background-image: url('/wp-content/uploads/2019/04/Wenkbrouwen-wimpers.jpg');}
+.diensten .col-lg-3 .diensten-block p { height: 54px; padding-top: 136px; padding-bottom: 214px;}
+
+
+/* portfolio area */
+#portfolio {background-color: #EDDBCC; padding: 0 0 75px 0; margin-top: 300px; margin-bottom: 300px;}
+img.portfolio-image-1, img.portfolio-image-2 { position: absolute; width: 350px; height: 550px;}
+img.portfolio-image-1 { margin-top: -50px; z-index: 999;}
+img.portfolio-image-2 { margin-top: -170px; margin-left: 285px;}
+#portfolio .col-lg-5 { padding-right: 75px;}
+#portfolio .col-lg-5 p { margin-top: 15px;}
+.portfolio-image-mobile {display: none;}
+
+/* reviews area */
+#reviews { margin-top: 150px; margin-bottom: 150px; margin-right:15px;}
+#reviews .col-md-7 { background-color: #EDDBCC;}
+.reviews-box { padding: 25px 300px 75px 0px;}
+#reviews .col-md-7 .container { margin-left: 75px;}
+.reviews-box img { width: 400px; height: 400px; position: absolute; margin-left: -430px; margin-top: -125px; object-fit: cover;}
+
+/* contact area */
+#contact { background-color: #EDDBCC;}
+.contact { padding-top: 30px; padding-right: 30px; padding-bottom: 50px;}
+.contact p i { transform: scale(1.3); margin-right: 10px;}
+.contact .phone-upside { transform: scaleX(-1)!important;}
+
+/* contact formulier */
+.contact input { height: 50px;}
+.contact-button { width: 100%;}
+.contact .col-md-7 { border-right: 1px solid rgba(0, 0, 0, .1); padding-right: 75px;}
+.contact .col-md-5 { padding-left: 75px;}
 
 /* footer area */
 #footer { background-color: #000000!important;}
@@ -62,6 +99,13 @@ ul.footer-text { padding: 0; margin-top: -10px;}
 ul.footer-text li { list-style-type: none;}
 ul.footer-text li a, ul.footer-text li { color: #d6d3d3; text-decoration: none;}
 ul.footer-text li a:hover { text-decoration: none;}
+
+/* copyright area */
+#copyright { background-color: #000000; letter-spacing: 1px; padding: 15px 0;}
+#copyright p { margin-bottom: 0!important; color: #d6d3d3; font-size: 13px;}
+#copyright a { color: #d6d3d3; text-decoration: none; font-size: 13px;}
+#copyright a:hover { color: #d6d3d3; text-decoration: none;}
+
 
 /* media query's */
 @media screen and (max-width: 600px){

@@ -1,245 +1,5 @@
-a {
-    color: #000000;
-    text-decoration: underline;
-}
-
-a:hover {
-    color: #000000;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-img.about-me-picture-mobile, .portfolio-image-mobile {
-    display: none;
-}
-
-
-img.about-me-picture{
-    width: 450px;
-    height: 450px;
-    position: absolute;
-    margin-left: 40px;
-}
-
-.standard-button {
-    border: 2px solid #000000;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 10px 30px;
-    color: #000000;
-    transition: .3s ease;
-}
-
-.standard-button::after {
-    content: ">";
-    margin: 0 20px;
-}
-
-.standard-button:hover {
-    background: #000000;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-#diensten {
-    background-color: #EDDBCC;
-    height: 200px;
-    margin-top: 150px;
-}
-
-#portfolio {
-    background-color: #EDDBCC;
-    padding: 0 0 75px 0;
-    margin-top: 300px;
-    margin-bottom: 300px;
-}
-
-.diensten {
-    margin-top: -150px;
-}
-
-.diensten .col-lg-3 .diensten-block{
-    height: 350px;
-    text-align: center;
-    color: #ffffff;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.diensten .col-lg-3 .diensten-bruiloften {
-    background-image: url('/wp-content/uploads/2019/04/bruiloften.jpg');
-}
-
-.diensten .col-lg-3 .diensten-videoclips {
-    background-image: url('/wp-content/uploads/2019/04/videoclips.jpg');
-}
-
-.diensten .col-lg-3 .diensten-feestjes {
-    background-image: url('/wp-content/uploads/2019/04/Feestjes.jpg');
-}
-
-.diensten .col-lg-3 .diensten-wenkbrouwen {
-    background-image: url('/wp-content/uploads/2019/04/Wenkbrouwen-wimpers.jpg');
-}
-
-.diensten .col-lg-3 .diensten-block p {
-    height: 54px;
-    padding-top: 136px;
-    padding-bottom: 214px;
-}
-
-#reviews {
-    margin-top: 150px;
-    margin-bottom: 150px;
-}
-
-#reviews .col-md-7 {
-    background-color: #EDDBCC;
-}
-
-.reviews-box {
-    padding: 25px 300px 75px 0px;
-}
-
-#contact {
-    background-color: #EDDBCC;
-}
-
-#aboutme {
-    background-color: #EDDBCC;
-    padding: 75px 0;
-}
-
-#aboutme .col-lg-6 p {
-    padding-right: 60px;
-}
-
-#diensten h2, #contact h2, #reviews h2, #portfolio h2 {
-    margin-top: -35px;
-}
-
-.contact {
-    padding-top: 30px; 
-    padding-right: 30px;
-    padding-bottom: 50px;
-}
-
-#footer {
-    background-color: #000000!important;
-}
-
-p.footer-head {
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-ul.footer-text {
-    padding: 0;
-    margin-top: -10px;
-}
-
-ul.footer-text li{
-    list-style-type: none;
-}
-
-ul.footer-text li a, ul.footer-text li {
-    color: #d6d3d3;
-    text-decoration: none;
-}
-
-ul.footer-text li a:hover {
-    text-decoration: none;
-}
-
-.contact p i {
-    transform: scale(1.3);
-    margin-right: 10px;
-}
-
-.contact .phone-upside {
-    transform: scaleX(-1)!important;
-}
-
-p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sans-serif;}
-
-.contact input {
-    height: 50px;
-}
-
-.contact .col-md-7 {
-    border-right: 1px solid rgba(0, 0, 0, .1);
-    padding-right: 75px;
-}
-
-.contact .col-md-5 {
-    padding-left: 75px;
-}
-
-.contact-button {
-    width: 100%;
-}
-
-#copyright {
-    background-color: #000000;
-    letter-spacing: 1px;
-    padding: 15px 0;
-}
-
-#copyright p {
-    margin-bottom: 0!important;
-    color: #d6d3d3;
-    font-size: 13px;
-}
-
-#copyright a {
-    color: #d6d3d3;
-    text-decoration: none;
-    font-size: 13px;
-}
-
-#copyright a:hover {
-    color: #d6d3d3;
-    text-decoration: none;
-}
-
-#reviews .col-md-7 .container {
-    margin-left: 75px;
-}
-
-.reviews-box img {
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    margin-left: -430px;
-    margin-top: -125px;
-    object-fit: cover;
-}
-
-img.portfolio-image-1 {
-    position: absolute;
-    width: 350px;
-    height: 550px;
-    margin-top: -50px;
-    z-index: 999;
-}
-
-img.portfolio-image-2 {
-    position: absolute;
-    width: 350px;
-    height: 550px;
-    margin-top: -170px;
-    margin-left: 285px;
-}
-
-#portfolio .col-lg-5 {
-    padding-right: 75px;
+.portfolio-single-text {
+	text-align:center;
 }
 
 @media only screen and (max-width:767px){
@@ -249,7 +9,7 @@ img.portfolio-image-2 {
     padding-right: 15px;
     padding-bottom: 50px;
    }
-    
+
 .contact .col-md-5 {
     padding-left: 15px;
     padding-top: 50px;
@@ -264,12 +24,12 @@ img.portfolio-image-2 {
     .diensten .col-lg-3 .diensten-block{
         margin-bottom: 15px;
     }
-    
+
     .diensten .col-lg-3 .diensten-block p {
         padding-top: 175px;
         padding-bottom: 175px;
     }
-    
+
 }
 
 @media only screen and (max-width: 1400px){
@@ -299,7 +59,7 @@ img.portfolio-image-2 {
         margin-top: -50px;
         z-index: 999;
     }
-    
+
     img.portfolio-image-2 {
         position: absolute;
         width: 325px;
