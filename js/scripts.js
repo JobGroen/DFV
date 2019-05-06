@@ -1,11 +1,15 @@
 /* Nav menu overlay */
 function openNav() {
-    document.getElementById("overlay-menu").style.width = "100%";
-}
+    $("body").addClass("open-menu");
+    //document.getElementById("sidenav-menu").style.width = "250px";
+    //document.getElementById("main-content").style.marginRight = "250px";
+  }
   
-function closeNav() {
-    document.getElementById("overlay-menu").style.width = "0%";
-}
+  function closeNav() {
+      $("body").removeClass("open-menu");
+    //document.getElementById("sidenav-menu").style.width = "0";
+    //document.getElementById("main-content").style.marginRight= "0";
+  }
 
 /* Nav menu scroll effect Homepage */
 $(window).scroll(function() {    

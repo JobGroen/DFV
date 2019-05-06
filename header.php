@@ -22,24 +22,24 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <a class="navbar-brand" href="/home">Pure face art</a>
-                <button class="overlaynav-toggle" type="button" onclick="openNav()">
+                <button class="sidenav-toggle" type="button" onclick="openNav()">
                     <i class="fas fa-bars"></i>
                 </button>
-                <div id="overlay-menu" class="overlay">
+                <div id="sidenav-menu" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <?php
 		        wp_nav_menu( array(
 			        'theme_location'    => 'top-menu',
 			        'depth'             => 2,
 			        'container'         => 'div',
-			        'container_class'   => 'overlay-content',
+			        'container_class'   => 'sidenav-content',
 			        'container_id'      => 'bs-example-navbar-collapse-1',
 			        'menu_class'        => 'nav navbar-nav flex-column',
 			        'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 			        'walker'            => new WP_Bootstrap_Navwalker(),
 		            ) );
                     ?>
-                    <div class="overlay-content-icons">
+                    <div class="sidenav-content-icons">
                     <i class="fab fa-instagram"></i>
                     <i class="fab fa-facebook-square"></i>
                     </div>
@@ -47,3 +47,4 @@
             </div>
         </nav>
     </header>
+    <div id="main-content">
