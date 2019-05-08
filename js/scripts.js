@@ -1,15 +1,11 @@
 /* Nav menu overlay */
 function openNav() {
     $("body").addClass("open-menu");
-    //document.getElementById("sidenav-menu").style.width = "250px";
-    //document.getElementById("main-content").style.marginRight = "250px";
-  }
+}
   
-  function closeNav() {
-      $("body").removeClass("open-menu");
-    //document.getElementById("sidenav-menu").style.width = "0";
-    //document.getElementById("main-content").style.marginRight= "0";
-  }
+function closeNav() {
+    $("body").removeClass("open-menu");
+}
 
 /* Nav menu scroll effect Homepage */
 $(window).scroll(function() {    
