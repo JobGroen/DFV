@@ -49,10 +49,11 @@
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #DFB49B;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  text-align: right;
 }
 
 .sidenav a {
@@ -72,6 +73,14 @@
   color: white;
   padding: 8px 0px 8px 6px;;
   font-size: 25px;
+}
+
+.sidenav-content{
+  margin-right: 10px;
+}
+
+.sidenav-content-icons {
+  margin-right: 18px;
 }
 
 #main-content{
