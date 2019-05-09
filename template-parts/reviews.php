@@ -1,3 +1,15 @@
+<?php
+
+$image1 = get_field('review_1_afbeelding');
+$image2 = get_field('review_2_afbeelding');
+$image3 = get_field('review_3_afbeelding');
+
+$link1 = get_field('review_1_portfolio_link');
+$link2 = get_field('review_2_portfolio_link');
+$link3 = get_field('review_3_portfolio_link');
+
+?>
+
 <div id="reviews">
     <div class="row">
         <div class="col-md-5">
@@ -9,14 +21,47 @@
             <div class="container">
                 <h2>Reviews</h2>
                 <div class="reviews-box">
-                    <img src="wp-content/uploads/2019/04/Asha-Goercharan-2-1.jpg" alt="reviews">
-                    <p><i>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenea commodo ligula eget
-                            dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                            consequat massa quis enim."</i></p>
 
-                    <p>- John doe</p>
-                    <a href="#">Bekijk alle foto's ></a>
+                    <div id="reviewslider" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p><i>"<?php the_field('review_1_tekst');?>"</i></p>
+
+                                <p>- <?php the_field('review_1_persoon');?></p>
+                                <a href="<?php echo $link1; ?>">Bekijk alle foto's ></a>
+                            </div>
+                            <div class="carousel-item">
+                                <p><i>"<?php the_field('review_2_tekst');?>"</i></p>
+
+                                <p>- <?php the_field('review_2_persoon');?></p>
+                                <a href="<?php echo $link2; ?>">Bekijk alle foto's ></a>
+                            </div>
+                            <div class="carousel-item">
+                                <p><i>"<?php the_field('review_3_tekst');?>"</i></p>
+
+                                <p>- <?php the_field('review_3_persoon');?></p>
+                                <a href="<?php echo $link3; ?>">Bekijk alle foto's ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slider_captions">
+                        <div id="caption-0" class="carousel-caption">
+                            <?php if( !empty($image1) ): ?>
+                                <img src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" />
+                            <?php endif; ?>
+                        </div>
+                        <div id="caption-1" class="carousel-caption">
+                            <?php if( !empty($image2) ): ?>
+                                <img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" />
+                            <?php endif; ?>
+                        </div>
+                        <div id="caption-2" class="carousel-caption">
+                            <?php if( !empty($image3) ): ?>
+                                <img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" />
+                            <?php endif; ?>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

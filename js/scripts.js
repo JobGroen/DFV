@@ -18,6 +18,20 @@ $(window).scroll(function() {
     }
 });
 
+/* Review slider */
+$("#reviewslider").on('slide.bs.carousel', function(evt) {
+
+    var step = $(evt.relatedTarget).index();
+
+    $('#slider_captions .carousel-caption:not(#caption-'+step+')').fadeOut('fast', function() {
+            $('#caption-'+step).fadeIn();
+    });
+
+ });
+
+ $('#reviewslider .carousel').carousel({
+    interval: 8000
+  })
 
 /* Portfolio page photos overlay */
 $(document).ready( function() {
