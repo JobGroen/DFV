@@ -32,7 +32,6 @@ p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sa
 #diensten h2, #contact h2, #reviews h2, #portfolio h2, #diensten-single h2 { margin-top: -35px;}
 
 .standard-button { border: 2px solid #000000; text-decoration: none; border-radius: 5px; padding: 10px 30px; color: #000000; transition: .3s ease;}
-.standard-button::after { content: ">"; margin: 0 2.5px 0 20px;}
 .standard-button:hover { background: #000000; text-decoration: none; color: #ffffff; transform: scale(1.05)!important;}
 
 /* navigation area */
@@ -57,10 +56,6 @@ img.about-me-picture{ width: 450px; height: 450px; position: absolute; margin-le
 #diensten { background-color: #EDDBCC; height: 200px; margin-top: 150px;}
 .diensten { margin-top: -150px;}
 .diensten .diensten-block{ height: 350px; text-align: center; color: #ffffff; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; background-size: cover; background-repeat: no-repeat; background-position: center;}
-.diensten .diensten-bruiloften { background-image: url('/wp-content/uploads/2019/04/bruiloften.jpg');}
-.diensten .diensten-videoclips { background-image: url('/wp-content/uploads/2019/04/videoclips.jpg');}
-.diensten .diensten-feestjes { background-image: url('/wp-content/uploads/2019/04/Feestjes.jpg');}
-.diensten .diensten-wenkbrouwen { background-image: url('/wp-content/uploads/2019/04/Wenkbrouwen-wimpers.jpg');}
 .diensten .col-lg-3 .diensten-block p { height: 54px; padding-top: 136px; padding-bottom: 214px;}
 
 
@@ -112,7 +107,7 @@ ul.footer-text li a:hover { text-decoration: none;}
 #diensten-single .col-md-7 { background-color: #EDDBCC;}
 .diensten-single-box { padding: 25px 300px 75px 0px;}
 #diensten-single .col-md-7 .container { margin-left: 75px;}
-.diensten-single-box img { width: 400px; height: 400px; position: absolute; margin-left: -430px; margin-top: -125px; object-fit: cover;}
+.diensten-single-box img { width: 400px; height: 400px; position: absolute; margin-left: -460px; margin-top: -125px; object-fit: cover;}
 
 
 /* media query's */

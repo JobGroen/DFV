@@ -1,14 +1,28 @@
+<?php
+    $portfolio1 = get_field('portfolio_afbeelding_1');
+    $portfolio2 = get_field('portfolio_afbeelding_2');
+?>
+
 <div id="portfolio">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
                 <h2>Portfolio</h2>
-                <p><?php the_field('about_me');?></p><br>
-                <a class="standard-button" href="#">Meer over mij</a>
+                <p><?php the_field('portfolio');?></p><br>
+                <a class="standard-button" href="/portfolio">Bekijk m'n portfolio</a>
                 <img class="portfolio-image-mobile" src="/wp-content/uploads/2019/04/Asha-Goercharan-2-1.jpg" alt="reviews">
+                <?php if( !empty($portfolio1) ): ?>
+                     <img class="portfolio-image-mobile" src="<?php echo $portfolio1['url']; ?>" alt="<?php echo $portfolio1['alt']; ?>" />
+                <?php endif; ?>
             </div>
 
             <div class="col-lg-7">
+            <?php if( !empty($portfolio1) ): ?>
+                     <img class="portfolio-image-1" src="<?php echo $portfolio1['url']; ?>" alt="<?php echo $portfolio1['alt']; ?>" />
+             <?php endif; ?>
+             <?php if( !empty($portfolio2) ): ?>
+                     <img class="portfolio-image-2" src="<?php echo $portfolio2['url']; ?>" alt="<?php echo $portfolio2['alt']; ?>" />
+            <?php endif; ?>
             <img class="portfolio-image-1" src="/wp-content/uploads/2019/04/Asha-Goercharan-2-1.jpg" alt="reviews">
 
             <img class="portfolio-image-2" src="/wp-content/uploads/2019/04/bruiloften-1.jpg" alt="reviews">
