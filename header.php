@@ -22,11 +22,10 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <a class="navbar-brand" href="/home">Pure face art</a>
-                <button class="sidenav-toggle" type="button" onclick="openNav()">
+                <button class="sidenav-toggle" type="button">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div id="sidenav-menu" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <?php
 		        wp_nav_menu( array(
 			        'theme_location'    => 'top-menu',
