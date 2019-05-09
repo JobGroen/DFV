@@ -1,11 +1,7 @@
 /* Nav menu overlay */
-function openNav() {
-    $("body").addClass("open-menu");
-}
-  
-function closeNav() {
-    $("body").removeClass("open-menu");
-}
+$(".sidenav-toggle").click(function () {
+    $("body").toggleClass("open-menu");
+});
 
 /* Nav menu scroll effect Homepage */
 $(window).scroll(function() {    

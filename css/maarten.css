@@ -15,6 +15,11 @@
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-radius: .25rem;
+  outline:none !important;
+}
+
+.sidenav-toggle::-moz-focus-inner {
+  border: 0 !important;
 }
 
 
@@ -44,10 +49,11 @@
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #DFB49B;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  text-align: right;
 }
 
 .sidenav a {
@@ -69,13 +75,12 @@
   font-size: 25px;
 }
 
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  font-size: 36px;
+.sidenav-content{
   margin-right: 10px;
+}
+
+.sidenav-content-icons {
+  margin-right: 18px;
 }
 
 #main-content{
@@ -88,6 +93,10 @@
 
 .open-menu #main-content {
   margin-right: 250px;
+}
+
+.open-menu .sidenav-toggle {
+  z-index: 25;
 }
 
 @media screen and (max-width: 415px) {
