@@ -9,7 +9,7 @@
 </div>
 
    <?php if(get_field('dienst_aanzetten') == "Ja"): ?>
-		<div id="diensten-single">
+		<div class="diensten-single">
 			<div class="row">
 				<div class="col-md-5">
 					<div class="container">
@@ -32,11 +32,11 @@
 	<?php endif; ?>
 
 	<?php if(get_field('dienst_aanzetten_2') == "Ja"): ?>
-		<div id="diensten-single">
+		<div class="diensten-single">
 			<div class="row">
 
 				<div class="col-md-7">
-					<div class="container">
+					<div class="container diensten-single-right">
 						<h2><?php the_field('dienst_titel_2');?></h2>
 						<div class="diensten-single-box diensten-afbeelding-right">
 							<p><?php the_field('dienst_beschrijving_2'); ?></p>
@@ -56,7 +56,7 @@
 	<?php endif; ?>
 
 	<?php if(get_field('dienst_aanzetten_3') == "Ja"): ?>
-			<div id="diensten-single">
+			<div class="diensten-single">
 				<div class="row">
 					<div class="col-md-5">
 						<div class="container">
@@ -79,11 +79,11 @@
 	<?php endif; ?>
 
 	<?php if(get_field('dienst_aanzetten_4') == "Ja"): ?>
-		<div id="diensten-single">
+		<div class="diensten-single">
 			<div class="row">
 
 				<div class="col-md-7">
-					<div class="container">
+					<div class="container diensten-single-right">
 						<h2><?php the_field('dienst_titel_4');?></h2>
 						<div class="diensten-single-box diensten-afbeelding-right">
 							<p><?php the_field('dienst_beschrijving_4'); ?></p>
@@ -103,7 +103,7 @@
 	<?php endif; ?>
 
 	<?php if(get_field('dienst_aanzetten_5') == "Ja"): ?>
-		<div id="diensten-single">
+		<div class="diensten-single">
 			<div class="row">
 				<div class="col-md-5">
 					<div class="container">
@@ -126,11 +126,11 @@
 	<?php endif; ?>
 
 	<?php if(get_field('dienst_aanzetten_6') == "Ja"): ?>
-		<div id="diensten-single">
+		<div class="diensten-single">
 			<div class="row">
 
 				<div class="col-md-7">
-					<div class="container">
+					<div class="container diensten-single-right">
 						<h2><?php the_field('dienst_titel_6');?></h2>
 						<div class="diensten-single-box diensten-afbeelding-right">
 							<p><?php the_field('dienst_beschrijving_6'); ?></p>
@@ -150,7 +150,7 @@
 	<?php endif; ?>
 
 	<?php if(get_field('dienst_aanzetten_7') == "Ja"): ?>
-		<div id="diensten-single">
+		<div class="diensten-single">
 			<div class="row">
 				<div class="col-md-5">
 					<div class="container">
@@ -173,11 +173,11 @@
 	<?php endif; ?>
 
 	<?php if(get_field('dienst_aanzetten_8') == "Ja"): ?>
-		<div id="diensten-single">
+		<div class="diensten-single">
 			<div class="row">
 
 				<div class="col-md-7">
-					<div class="container">
+					<div class="container diensten-single-right">
 						<h2><?php the_field('dienst_titel_8');?></h2>
 						<div class="diensten-single-box diensten-afbeelding-right">
 							<p><?php the_field('dienst_beschrijving_8'); ?></p>
@@ -197,7 +197,7 @@
 	<?php endif; ?>
 
 	<?php if(get_field('dienst_aanzetten_9') == "Ja"): ?>
-		<div id="diensten-single">
+		<div class="diensten-single">
 			<div class="row">
 				<div class="col-md-5">
 					<div class="container">
@@ -211,7 +211,7 @@
 							<img src="<?php the_field('dienst_afbeelding_9'); ?>" alt="dienst">
 							<p><?php the_field('dienst_beschrijving_9'); ?></p>
 
-							<p class="diensten-prijs">€ <?php the_field('prijs_9'); ?>,-</p>
+							<p class="diensten-prijs">€ <?php the_field('prijs_9'); ?></p>
 						</div>
 					</div>
 				</div>
@@ -220,11 +220,11 @@
 	<?php endif; ?>
 
 	<?php if(get_field('dienst_aanzetten_10') == "Ja"): ?>
-		<div id="diensten-single">
+		<div class="diensten-single">
 			<div class="row">
 
 				<div class="col-md-7">
-					<div class="container">
+					<div class="container diensten-single-right">
 						<h2><?php the_field('dienst_titel_10');?></h2>
 						<div class="diensten-single-box diensten-afbeelding-right">
 							<p><?php the_field('dienst_beschrijving_10'); ?></p>
