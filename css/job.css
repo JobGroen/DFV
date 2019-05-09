@@ -6,10 +6,14 @@
     width: 400px;
     height: 400px;
     position: absolute;
-    right: -200px;
+    right: -360px;
     top: 0;
     margin-top: -50px;
     object-fit: cover;
+}
+
+.diensten-single-right {
+	margin-left:26%;
 }
 
 .diensten-prijs {
