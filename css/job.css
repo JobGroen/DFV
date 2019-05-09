@@ -2,6 +2,22 @@
 	text-align:center;
 }
 
+.diensten-afbeelding-right img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: -200px;
+    top: 0;
+    margin-top: -50px;
+    object-fit: cover;
+}
+
+.diensten-prijs {
+	font-weight:bold;
+	font-size: 25px;
+	font-family: 'Open Sans', sans-serif;
+}
+
 @media only screen and (max-width:767px){
 .contact .col-md-7 {
     border-right: none;
@@ -150,7 +166,7 @@
     .reviews-box img {
         width: 350px;
         height: 350px;
-        margin-left: -400px;
+        margin-left: -550px;
     }
 }
 
