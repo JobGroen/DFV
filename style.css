@@ -29,7 +29,7 @@ p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sa
 
 .standard-h4 { font-size: 25px;}
 
-#diensten h2, #contact h2, #reviews h2, #portfolio h2 { margin-top: -35px;}
+#diensten h2, #contact h2, #reviews h2, #portfolio h2, #diensten-single h2 { margin-top: -35px;}
 
 .standard-button { border: 2px solid #000000; text-decoration: none; border-radius: 5px; padding: 10px 30px; color: #000000; transition: .3s ease;}
 .standard-button::after { content: ">"; margin: 0 2.5px 0 20px;}
@@ -78,7 +78,8 @@ img.portfolio-image-2 { margin-top: -170px; margin-left: 285px;}
 #reviews .col-md-7 { background-color: #EDDBCC;}
 .reviews-box { padding: 25px 300px 75px 0px;}
 #reviews .col-md-7 .container { margin-left: 75px;}
-.reviews-box img { width: 400px; height: 400px; position: absolute; margin-left: -430px; margin-top: -125px; object-fit: cover;}
+.reviews-box img { width: 400px; height: 400px; position: absolute; margin-left: -770px; margin-top: -400px; object-fit: cover;}
+.carousel-caption:not(#caption-0) {display: none;}
 
 /* contact area */
 #contact { background-color: #EDDBCC;}
@@ -105,6 +106,13 @@ ul.footer-text li a:hover { text-decoration: none;}
 #copyright p { margin-bottom: 0!important; color: #d6d3d3; font-size: 13px;}
 #copyright a { color: #d6d3d3; text-decoration: none; font-size: 13px;}
 #copyright a:hover { color: #d6d3d3; text-decoration: none;}
+
+/*diensten pagina */
+#diensten-single { margin-top: 150px; margin-bottom: 150px; margin-right:15px;}
+#diensten-single .col-md-7 { background-color: #EDDBCC;}
+.diensten-single-box { padding: 25px 300px 75px 0px;}
+#diensten-single .col-md-7 .container { margin-left: 75px;}
+.diensten-single-box img { width: 400px; height: 400px; position: absolute; margin-left: -430px; margin-top: -125px; object-fit: cover;}
 
 
 /* media query's */
