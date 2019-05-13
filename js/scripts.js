@@ -78,6 +78,37 @@ function validateForm() {
         'subject': $('input[name=subject]').val(),
         'message': $('textarea[name=message]').val()
     };
+
+    var name = $('input[name=name]');
+    var email = $('input[name=email]');
+    var subject = $('input[name=subject]');
+    var message = $('textarea[name=message]');
+    var visual_error = "1px solid red";
+    var visual_reset = "0";
+
+    if (name.val() == '') {
+        name.css("border", visual_error);
+    } else {
+        name.css("borer", visual_reset);
+    }
+
+    if (email.val() == '' || ! email.val().includes("@")) {
+        email.css("border", visual_error);
+    } else {
+        email.css("border", visual_reset);
+    }
+
+    if (subject.val() == '') {
+        subject.css("border", visual_error);
+    } else {
+        subject.css("border", visual_reset);
+    }
+
+    if (message.val() == '') {
+        message.css("border", visual_error);
+    } else {
+        message.css("border", visual_reset);
+    }
     
     
     $.ajax({
@@ -95,3 +126,4 @@ function validateForm() {
         }
     });
 }
+

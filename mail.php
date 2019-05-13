@@ -9,7 +9,7 @@ $inputcheck = $name . $message . $subject;
 header('Content-Type: application/json');
 
 if ($inputcheck === ''){
-    print json_encode(array('message' => 'Niet alle velden zijn correct ingevoerd', 'code' => 0));
+    print json_encode(array('message' => 'Niet alle velden zijn ingevuld', 'code' => 0));
     exit();
 }
 
@@ -19,27 +19,27 @@ if (!preg_match('/^[A-Za-z0-9 ]+$/', $inputcheck)) {
 } 
 
 if ($name === ''){
-    print json_encode(array('message' => 'Niet alle velden zijn correct ingevoerd', 'code' => 0));
+    print json_encode(array('message' => 'Vul a.u.b Uw naam in', 'code' => 0));
     exit();
 }
 
 if ($email === ''){
-    print json_encode(array('message' => 'Niet alle velden zijn correct ingevoerd', 'code' => 0));
+    print json_encode(array('message' => 'Vul a.u.b Uw E-mail in', 'code' => 0));
     exit();
 } else {
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        print json_encode(array('message' => 'Niet alle velden zijn correct ingevoerd', 'code' => 0));
+        print json_encode(array('message' => 'Vul a.u.b Uw E-mail correct in', 'code' => 0));
         exit();
     }
 }
 
 if ($subject === ''){
-    print json_encode(array('message' => 'Niet alle velden zijn correct ingevoerd', 'code' => 0));
+    print json_encode(array('message' => 'Voer a.u.b een onderwerp in', 'code' => 0));
     exit();
 }
 
 if ($message === ''){
-    print json_encode(array('message' => 'Niet alle velden zijn correct ingevoerd', 'code' => 0));
+    print json_encode(array('message' => 'Voeg a.u.b een bericht toe', 'code' => 0));
     exit();
 }
 $sender = "contact@jobgroen.nl";
