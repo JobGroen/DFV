@@ -15,7 +15,7 @@
     width: 703px;
 }
 
-.diensten-afbeelding-right img {
+.overmij-afbeelding-right img {
     width: 400px;
     height: 400px;
     position: absolute;
@@ -25,15 +25,18 @@
     object-fit: cover;
 }
 
-.diensten-single-right {
+.overmij-single-right {
 	margin-left:26%;
 }
 
-.diensten-prijs {
-	font-weight:bold;
-	font-size: 25px;
-	font-family: 'Open Sans', sans-serif;
+.balk {
+    width: 100%;
+    padding-bottom: 15%;
+    background-position: center;
+    background-color: #EDDBCC;
+    margin-top: 100px;
 }
+
 
 @media only screen and (max-width:767px){
 .contact .col-md-7 {
