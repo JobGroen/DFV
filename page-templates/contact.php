@@ -9,4 +9,5 @@
 </div>
 
 <?php get_template_part( 'template-parts/contactform-single'); ?>
+<?php get_template_part( 'template-parts/location'); ?>
 <?php get_footer();?>
