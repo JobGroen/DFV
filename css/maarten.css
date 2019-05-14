@@ -214,3 +214,84 @@
   column-count:         1;
   }
 }
+
+/*diensten pagina */
+.diensten-single { margin-top: 150px; margin-bottom: 150px; margin-right:15px;}
+.diensten-single .col-md-7 { background-color: #EDDBCC;}
+.diensten-single-box { padding: 25px 40px 75px 0px;}
+.diensten-single-box img { width: 400px; height: 400px; position: absolute; margin-left: -420px; margin-top: -125px; object-fit: cover;}
+.diensten-afbeelding-right img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: -340px;
+  top: 0;
+  margin-top: -50px;
+  object-fit: cover;
+}
+
+.diensten-single .portfolio-image-mobile {
+  display: none;
+}
+
+.diensten-prijs {
+font-weight:bold;
+font-size: 25px;
+font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .diensten-afbeelding-right img {
+    right: -370px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .diensten-single {
+    margin-bottom: 220px;
+  }
+
+  .diensten-afbeelding-right img {
+    width: 250px;
+    height: 250px;
+    right: 0px;
+    margin-top: 250px;
+  }
+
+  .diensten-single-box img {
+    width: 250px;
+    height: 250px;
+    right: 0px;
+    margin-top: 250px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+
+  .diensten-single {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .diensten-single .col-md-7:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  .diensten-afbeelding-right img {
+    display: none;
+  }
+
+  .diensten-single-box img {
+    display: none;
+  }
+
+  .diensten-single .portfolio-image-mobile {
+    display: block !important;
+    height: 400px !important;
+    width: 400px !important;
+    margin-bottom: 40px !important;
+    margin-top: 25px;
+  }
+}
+
+
