@@ -39,8 +39,8 @@
 		            ) );
                     ?>
                     <div class="sidenav-content-icons">
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook-square"></i>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
                     </div>
                 </div>
             </div>

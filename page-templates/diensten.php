@@ -18,6 +18,7 @@
 
 				<div class="col-md-7">
 					<div class="container">
+					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding'); ?>" alt="dienst">
 						<h2><?php the_field('dienst_titel');?></h2>
 						<div class="diensten-single-box">
 							<img src="<?php the_field('dienst_afbeelding'); ?>" alt="dienst">
@@ -37,6 +38,7 @@
 
 				<div class="col-md-7">
 					<div class="container diensten-single-right">
+					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_2'); ?>" alt="dienst">
 						<h2><?php the_field('dienst_titel_2');?></h2>
 						<div class="diensten-single-box diensten-afbeelding-right">
 							<p><?php the_field('dienst_beschrijving_2'); ?></p>
@@ -65,6 +67,7 @@
 
 					<div class="col-md-7">
 						<div class="container">
+						<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_3'); ?>" alt="dienst">
 							<h2><?php the_field('dienst_titel_3');?></h2>
 							<div class="diensten-single-box">
 								<img src="<?php the_field('dienst_afbeelding_3'); ?>" alt="dienst">
@@ -84,6 +87,7 @@
 
 				<div class="col-md-7">
 					<div class="container diensten-single-right">
+					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_4'); ?>" alt="dienst">
 						<h2><?php the_field('dienst_titel_4');?></h2>
 						<div class="diensten-single-box diensten-afbeelding-right">
 							<p><?php the_field('dienst_beschrijving_4'); ?></p>
@@ -112,6 +116,7 @@
 
 				<div class="col-md-7">
 					<div class="container">
+					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_5'); ?>" alt="dienst">
 						<h2><?php the_field('dienst_titel_5');?></h2>
 						<div class="diensten-single-box">
 							<img src="<?php the_field('dienst_afbeelding_5'); ?>" alt="dienst">
@@ -131,6 +136,7 @@
 
 				<div class="col-md-7">
 					<div class="container diensten-single-right">
+					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_6'); ?>" alt="dienst">
 						<h2><?php the_field('dienst_titel_6');?></h2>
 						<div class="diensten-single-box diensten-afbeelding-right">
 							<p><?php the_field('dienst_beschrijving_6'); ?></p>
@@ -159,6 +165,7 @@
 
 				<div class="col-md-7">
 					<div class="container">
+					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_7'); ?>" alt="dienst">
 						<h2><?php the_field('dienst_titel_7');?></h2>
 						<div class="diensten-single-box">
 							<img src="<?php the_field('dienst_afbeelding_7'); ?>" alt="dienst">
@@ -178,6 +185,7 @@
 
 				<div class="col-md-7">
 					<div class="container diensten-single-right">
+					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_8'); ?>" alt="dienst">
 						<h2><?php the_field('dienst_titel_8');?></h2>
 						<div class="diensten-single-box diensten-afbeelding-right">
 							<p><?php the_field('dienst_beschrijving_8'); ?></p>
@@ -206,6 +214,7 @@
 
 				<div class="col-md-7">
 					<div class="container">
+					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_9'); ?>" alt="dienst">
 						<h2><?php the_field('dienst_titel_9');?></h2>
 						<div class="diensten-single-box">
 							<img src="<?php the_field('dienst_afbeelding_9'); ?>" alt="dienst">
@@ -225,6 +234,7 @@
 
 				<div class="col-md-7">
 					<div class="container diensten-single-right">
+					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_10'); ?>" alt="dienst">
 						<h2><?php the_field('dienst_titel_10');?></h2>
 						<div class="diensten-single-box diensten-afbeelding-right">
 							<p><?php the_field('dienst_beschrijving_10'); ?></p>
@@ -242,4 +252,7 @@
 			</div>
 		</div>
 	<?php endif; ?>
+
+<?php get_template_part( 'template-parts/contactform'); ?>
+
 <?php get_footer();?>

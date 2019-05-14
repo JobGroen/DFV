@@ -2,6 +2,19 @@
 	text-align:center;
 }
 
+.overmij-afbeelding{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+	margin-left: -255px;
+}
+
+.overmij-tekst {
+    margin-top: -387px;
+    margin-left: -58px;
+    width: 703px;
+}
+
 .overmij-afbeelding-right img {
     width: 400px;
     height: 400px;
