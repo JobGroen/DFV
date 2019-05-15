@@ -23,6 +23,10 @@
   border: 0 !important;
 }
 
+.sidenav-toggle .fa-times {
+  display: none;
+}
+
 
 .archive .navbar {
   background-color: rgba(255, 255, 255, 0.9) !important;
@@ -50,7 +54,7 @@
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #DFB49B;
+  background-color: #EDDBCC;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -94,6 +98,15 @@
 
 .open-menu .sidenav-toggle {
   z-index: 25;
+}
+
+.open-menu .sidenav-toggle .fa-bars {
+  display: none;
+}
+
+.open-menu .sidenav-toggle .fa-times {
+  display: block;
+  font-size: 1.9rem
 }
 
 @media screen and (max-width: 415px) {
