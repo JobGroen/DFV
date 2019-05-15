@@ -23,6 +23,9 @@
                 <div class="aboutme-single-box">
                     <img src="<?php the_field("overmij_afbeelding") ?>" alt="overmij">
                     <p><?php the_field("overmij_beschrijving") ?></p>
+                    <span id="text"><?php the_field("overmij_beschrijving_2") ?></span>
+                    <a class="standard-button" id="toggle">Read more</a>
+                    
                 </div>
             </div>
         </div>
@@ -30,7 +33,9 @@
 </div>
 
 <div class="balk"></div>
+<div class="container">
 <iframe class="aboutme-video" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+</div>
 
 <?php get_template_part( 'template-parts/contactform'); ?>
 
