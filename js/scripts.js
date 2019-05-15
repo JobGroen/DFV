@@ -29,6 +29,22 @@ $("#reviewslider").on('slide.bs.carousel', function(evt) {
     interval: 8000
   })
 
+/* About page read more */
+$(document).ready(function() {
+    $("#toggle").click(function() {
+      var elem = $("#toggle").text();
+      if (elem == "Lees meer") {
+        //Stuff to do when btn is in the read more state
+        $("#toggle").text("Lees minder");
+        $("#text").slideDown();
+      } else {
+        //Stuff to do when btn is in the read less state
+        $("#toggle").text("Lees meer");
+        $("#text").slideUp();
+      }
+    });
+  });
+
 /* Portfolio page photos overlay */
 $(document).ready( function() {
 
