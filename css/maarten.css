@@ -307,4 +307,64 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
+/* About me page */
+.aboutme-single { margin-top: 100px; margin-bottom: 150px; margin-right:15px;}
+.aboutme-single-box img { width: 300px; height: 300px; position: absolute; margin-left: -310px; margin-top: -5px; object-fit: cover;}
+.aboutme-video { display: block; margin: 0 auto; margin-top: -140px; margin-bottom: 80px; width: 900px; height: 550px;}
+.aboutme-image-mobile { display: none;}
+
+.col-md-7 .balk {
+  position: absolute;
+  z-index: -10;
+  min-height: 100%;
+  margin-top: 30px;
+  margin-left: -30px;
+  background-color: #EDDBCC;
+}
+
+.balk {
+  width: 100%;
+  padding-bottom: 15%;
+  background-position: center;
+  background-color: #EDDBCC;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutme-video {  
+    margin-top: -55px;
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+
+  .aboutme-video {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  .aboutme-single {
+    margin-top: 20px;
+  }
+
+  .aboutme-single-box img {
+    display: none;
+  }
+
+  .aboutme-single .aboutme-image-mobile {
+    display: block !important;
+    height: 400px !important;
+    width: 400px !important;
+    margin-bottom: 40px !important;
+    margin-top: 25px;
+    margin-left: -20px
+  }
+
+
+}
+
+
 
