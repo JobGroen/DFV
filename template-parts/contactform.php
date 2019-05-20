@@ -9,7 +9,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>Maak een afspraak</h2>
+                <h2>Een afspraak maken?</h2>
+            </div>
+            <div class="col-md-7">
+            <p>Vul hieronder dan het contactformulier in met je wensen en dan beantwoorden wij zo snel mogelijk.</p>
             </div>
         </div>
     </div>
