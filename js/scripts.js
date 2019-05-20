@@ -4,7 +4,7 @@ $(".sidenav-toggle").click(function () {
 });
 
 /* Nav menu scroll effect Homepage */
-$(window).scroll(function() {    
+$(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
     if (scroll >= $("#header").height()) {
@@ -15,49 +15,56 @@ $(window).scroll(function() {
 });
 
 /* Review slider */
-$("#reviewslider").on('slide.bs.carousel', function(evt) {
+$("#reviewslider").on('slide.bs.carousel', function (evt) {
 
     var step = $(evt.relatedTarget).index();
 
-    $('#slider_captions .carousel-caption:not(#caption-'+step+')').fadeOut('fast', function() {
-            $('#caption-'+step).fadeIn();
+    $('#slider_captions .carousel-caption:not(#caption-' + step + ')').fadeOut('fast', function () {
+        $('#caption-' + step).fadeIn();
     });
 
- });
+});
 
- $('#reviewslider .carousel').carousel({
+$('#reviewslider .carousel').carousel({
     interval: 8000
-  })
+})
 
 /* About page read more */
-$(document).ready(function() {
-    $("#toggle").click(function() {
-      var elem = $("#toggle").text();
-      if (elem == "Lees meer") {
-        //Stuff to do when btn is in the read more state
-        $("#toggle").text("Lees minder");
-        $("#text").slideDown();
-      } else {
-        //Stuff to do when btn is in the read less state
-        $("#toggle").text("Lees meer");
-        $("#text").slideUp();
-      }
+$(document).ready(function () {
+    $("#toggle").click(function () {
+        var elem = $("#toggle").text();
+        if (elem == "Lees meer") {
+            //Stuff to do when btn is in the read more state
+            $("#toggle").text("Lees minder");
+            $("#text").slideDown();
+        } else {
+            //Stuff to do when btn is in the read less state
+            $("#toggle").text("Lees meer");
+            $("#text").slideUp();
+        }
     });
-  });
+});
+
+/* Diensten page contact button */
+$(".standard-button.scrollto-button").click(function() {
+    $('html, body').animate({
+        scrollTop: ($('#contact').offset().top -100)
+    },800);
+});
 
 /* Portfolio page photos overlay */
-$(document).ready( function() {
+$(document).ready(function () {
 
-    $('.photos-item').hover( function() {
+    $('.photos-item').hover(function () {
         $(this).find('.img-title').fadeIn(300);
-    }, function() {
+    }, function () {
         $(this).find('.img-title').fadeOut(100);
     });
-    
+
 });
 
 /* Portfolio page category filter */
-$(function() {
+$(function () {
     var $container = $('#photos'),
         $select = $('div#filters select');
     filters = {};
@@ -65,12 +72,12 @@ $(function() {
     $container.isotope({
         itemSelector: '.photos-item'
     });
-        $select.change(function() {
+    $select.change(function () {
         var $this = $(this);
 
         var $optionSet = $this;
         var group = $optionSet.attr('data-filter-group');
-    filters[group] = $this.find('option:selected').attr('data-filter-value');
+        filters[group] = $this.find('option:selected').attr('data-filter-value');
 
         var isoFilters = [];
         for (var prop in filters) {
@@ -86,6 +93,7 @@ $(function() {
     });
 });
 
+/* Contact form validation */
 function validateForm() {
     document.getElementById('status').innerHTML = "Sending...";
     formData = {
@@ -108,7 +116,7 @@ function validateForm() {
         name.css("borer", visual_reset);
     }
 
-    if (email.val() == '' || ! email.val().includes("@")) {
+    if (email.val() == '' || !email.val().includes("@")) {
         email.css("border", visual_error);
     } else {
         email.css("border", visual_reset);
@@ -125,14 +133,14 @@ function validateForm() {
     } else {
         message.css("border", visual_reset);
     }
-    
-    
+
+
     $.ajax({
         url: "/wp-content/themes/DFV/mail.php",
         type: "POST",
         data: formData,
         success: function (data, textStatus, jqXHR) {
-    
+
             $('#status').text(data.message);
             if (data.code)
                 $('#contact-form').closest('form').find("input[type=text], textarea").val("");
@@ -142,4 +150,3 @@ function validateForm() {
         }
     });
 }
-

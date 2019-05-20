@@ -11,6 +11,7 @@
    <?php if(get_field('dienst_aanzetten') == "Ja"): ?>
 		<div class="diensten-single">
 			<div class="row">
+			<div class="balk"></div>
 				<div class="col-md-5">
 					<div class="container">
 					</div>
@@ -25,6 +26,7 @@
 							<p><?php the_field('dienst_beschrijving'); ?></p>
 
 							<p class="diensten-prijs">€ <?php the_field('prijs'); ?>,-</p>
+							<a class="standard-button scrollto-button">Afspraak maken</a>
 						</div>
 					</div>
 				</div>
@@ -37,6 +39,7 @@
 			<div class="row">
 
 				<div class="col-md-7">
+				<div class="balk"></div>
 					<div class="container diensten-single-right">
 					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_2'); ?>" alt="dienst">
 						<h2><?php the_field('dienst_titel_2');?></h2>
@@ -44,6 +47,7 @@
 							<p><?php the_field('dienst_beschrijving_2'); ?></p>
 
 							<p class="diensten-prijs">€ <?php the_field('prijs_2'); ?>,-</p>
+							<a class="standard-button scrollto-button">Afspraak maken</a>
 							<img src="<?php the_field('dienst_afbeelding_2'); ?>" alt="dienst">
 						</div>
 					</div>
@@ -60,6 +64,7 @@
 	<?php if(get_field('dienst_aanzetten_3') == "Ja"): ?>
 			<div class="diensten-single">
 				<div class="row">
+				<div class="balk"></div>
 					<div class="col-md-5">
 						<div class="container">
 						</div>
@@ -74,6 +79,7 @@
 								<p><?php the_field('dienst_beschrijving_3'); ?></p>
 
 								<p class="diensten-prijs">€ <?php the_field('prijs_3'); ?>,-</p>
+								<a class="standard-button scrollto-button">Afspraak maken</a>
 							</div>
 						</div>
 					</div>
@@ -86,6 +92,7 @@
 			<div class="row">
 
 				<div class="col-md-7">
+				<div class="balk"></div>
 					<div class="container diensten-single-right">
 					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_4'); ?>" alt="dienst">
 						<h2><?php the_field('dienst_titel_4');?></h2>
@@ -93,6 +100,7 @@
 							<p><?php the_field('dienst_beschrijving_4'); ?></p>
 
 							<p class="diensten-prijs">€ <?php the_field('prijs_4'); ?>,-</p>
+							<a class="standard-button scrollto-button">Afspraak maken</a>
 							<img src="<?php the_field('dienst_afbeelding_4'); ?>" alt="dienst">
 						</div>
 					</div>
@@ -109,6 +117,7 @@
 	<?php if(get_field('dienst_aanzetten_5') == "Ja"): ?>
 		<div class="diensten-single">
 			<div class="row">
+			<div class="balk"></div>
 				<div class="col-md-5">
 					<div class="container">
 					</div>
@@ -123,6 +132,7 @@
 							<p><?php the_field('dienst_beschrijving_5'); ?></p>
 
 							<p class="diensten-prijs">€ <?php the_field('prijs_5'); ?>,-</p>
+							<a class="standard-button scrollto-button">Afspraak maken</a>
 						</div>
 					</div>
 				</div>
@@ -135,6 +145,7 @@
 			<div class="row">
 
 				<div class="col-md-7">
+				<div class="balk"></div>
 					<div class="container diensten-single-right">
 					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_6'); ?>" alt="dienst">
 						<h2><?php the_field('dienst_titel_6');?></h2>
@@ -142,6 +153,7 @@
 							<p><?php the_field('dienst_beschrijving_6'); ?></p>
 
 							<p class="diensten-prijs">€ <?php the_field('prijs_6'); ?>,-</p>
+							<a class="standard-button scrollto-button">Afspraak maken</a>
 							<img src="<?php the_field('dienst_afbeelding_6'); ?>" alt="dienst">
 						</div>
 					</div>
@@ -158,6 +170,7 @@
 	<?php if(get_field('dienst_aanzetten_7') == "Ja"): ?>
 		<div class="diensten-single">
 			<div class="row">
+			<div class="balk"></div>
 				<div class="col-md-5">
 					<div class="container">
 					</div>
@@ -172,6 +185,7 @@
 							<p><?php the_field('dienst_beschrijving_7'); ?></p>
 
 							<p class="diensten-prijs">€ <?php the_field('prijs_7'); ?>,-</p>
+							<a class="standard-button scrollto-button">Afspraak maken</a>
 						</div>
 					</div>
 				</div>
@@ -184,6 +198,7 @@
 			<div class="row">
 
 				<div class="col-md-7">
+				<div class="balk"></div>
 					<div class="container diensten-single-right">
 					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_8'); ?>" alt="dienst">
 						<h2><?php the_field('dienst_titel_8');?></h2>
@@ -191,6 +206,7 @@
 							<p><?php the_field('dienst_beschrijving_8'); ?></p>
 
 							<p class="diensten-prijs">€ <?php the_field('prijs_8'); ?>,-</p>
+							<a class="standard-button scrollto-button">Afspraak maken</a>
 							<img src="<?php the_field('dienst_afbeelding_8'); ?>" alt="dienst">
 						</div>
 					</div>
@@ -207,6 +223,7 @@
 	<?php if(get_field('dienst_aanzetten_9') == "Ja"): ?>
 		<div class="diensten-single">
 			<div class="row">
+			<div class="balk"></div>
 				<div class="col-md-5">
 					<div class="container">
 					</div>
@@ -219,6 +236,7 @@
 						<div class="diensten-single-box">
 							<img src="<?php the_field('dienst_afbeelding_9'); ?>" alt="dienst">
 							<p><?php the_field('dienst_beschrijving_9'); ?></p>
+							<a class="standard-button scrollto-button">Afspraak maken</a>
 
 							<p class="diensten-prijs">€ <?php the_field('prijs_9'); ?></p>
 						</div>
@@ -233,6 +251,7 @@
 			<div class="row">
 
 				<div class="col-md-7">
+				<div class="balk"></div>
 					<div class="container diensten-single-right">
 					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_10'); ?>" alt="dienst">
 						<h2><?php the_field('dienst_titel_10');?></h2>
@@ -240,6 +259,7 @@
 							<p><?php the_field('dienst_beschrijving_10'); ?></p>
 
 							<p class="diensten-prijs">€ <?php the_field('prijs_10'); ?>,-</p>
+							<a class="standard-button scrollto-button">Afspraak maken</a>
 							<img src="<?php the_field('dienst_afbeelding_10'); ?>" alt="dienst">
 						</div>
 					</div>
