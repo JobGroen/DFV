@@ -9,8 +9,7 @@
             <div class="col-lg-5">
                 <h2>Portfolio</h2>
                 <p><?php the_field('portfolio');?></p><br>
-                <a class="standard-button" href="/portfolio">Bekijk m'n portfolio</a>
-                <img class="portfolio-image-mobile" src="/wp-content/uploads/2019/04/Asha-Goercharan-2-1.jpg" alt="reviews">
+                <a class="standard-button" href="/portfolio">Bekijk mijn portfolio</a>
                 <?php if( !empty($portfolio1) ): ?>
                      <img class="portfolio-image-mobile" src="<?php echo $portfolio1['url']; ?>" alt="<?php echo $portfolio1['alt']; ?>" />
                 <?php endif; ?>

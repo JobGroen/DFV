@@ -28,19 +28,19 @@ $link3 = get_field('review_3_portfolio_link');
                                 <p><i>"<?php the_field('review_1_tekst');?>"</i></p>
 
                                 <p>- <?php the_field('review_1_persoon');?></p>
-                                <a href="<?php echo $link1; ?>">Bekijk alle foto's ></a>
+                                <a href="<?php echo $link1; ?>">Bekijk alle foto's <i class="fas fa-angle-right"></i></a>
                             </div>
                             <div class="carousel-item">
                                 <p><i>"<?php the_field('review_2_tekst');?>"</i></p>
 
                                 <p>- <?php the_field('review_2_persoon');?></p>
-                                <a href="<?php echo $link2; ?>">Bekijk alle foto's ></a>
+                                <a href="<?php echo $link2; ?>">Bekijk alle foto's <i class="fas fa-angle-right"></i></a>
                             </div>
                             <div class="carousel-item">
                                 <p><i>"<?php the_field('review_3_tekst');?>"</i></p>
 
                                 <p>- <?php the_field('review_3_persoon');?></p>
-                                <a href="<?php echo $link3; ?>">Bekijk alle foto's ></a>
+                                <a href="<?php echo $link3; ?>">Bekijk alle foto's <i class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
