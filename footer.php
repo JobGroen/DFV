@@ -10,10 +10,10 @@
             <div class="col-md-4">
                 <p class="footer-head">Navigatie:</p>
                 <ul class="footer-text">
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Over mij</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a class="footer-link" href="/portfolio">Portfolio</a></li>
+                    <li><a class="footer-link" href="/about-me">Over mij</a></li>
+                    <li><a class="footer-link" href="/category/blog">Blog</a></li>
+                    <li><a class="footer-link" href="/contact">Contact</a></li>
                 </ul>
             </div>
 

@@ -29,10 +29,11 @@ p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sa
 
 .standard-h4 { font-size: 25px;}
 
-#diensten h2, #contact h2, #reviews h2, #portfolio h2, #diensten-single h2 { margin-top: -35px;}
+#diensten h2, #contact h2, #reviews h2, #portfolio h2, .diensten-single h2 { margin-top: -35px;}
 
 .standard-button { border: 2px solid #000000; text-decoration: none; border-radius: 5px; padding: 10px 30px; color: #000000; transition: .3s ease;}
 .standard-button:hover { background: #000000; text-decoration: none; color: #ffffff; transform: scale(1.05)!important;}
+.standard-button::after { font-family: "Font Awesome 5 Free"; font-weight: 900; content:"\f105"; margin-left: 25px;}
 
 /* navigation area */
 .navbar { background: transparent;}
@@ -40,23 +41,27 @@ p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sa
 .fa-bars {font-size: 30px;  }
 
 /* header area */
-#header { text-transform: uppercase; text-align: center; color: #ffffff; margin-top: -56px; height: 100vh;}
+#header { background-size: cover; background-repeat: no-repeat; text-transform: uppercase; text-align: center; color: #ffffff; margin-top: -56px; height: 100vh;}
 
-.header { position: absolute; top: 300px; left: 0px; right: 0px;}
+.header { position: absolute; top: 40%; left: 0px; right: 0px;}
 .header h1 { margin: 0 auto; width: 50%; padding: 20px; letter-spacing: 15px; border: 2px solid #ffffff; }
 .header-lead { font-size: 20px; padding-top: 15px; letter-spacing: 5px; }
 
 /* aboutme area */
 #aboutme { background-color: #EDDBCC; padding: 75px 0;}
 #aboutme .col-lg-6 p { padding-right: 60px;}
+.aboutme-single .row { margin-bottom: 150px;}
 img.about-me-picture-mobile { display: none;}
-img.about-me-picture{ width: 450px; height: 450px; position: absolute; margin-left: 40px;}
+img.about-me-picture{ width: 450px; height: 450px; position: absolute; margin-left: 85px;}
 
 /* diensten area */
 #diensten { background-color: #EDDBCC; height: 200px; margin-top: 150px;}
 .diensten { margin-top: -150px;}
-.diensten .diensten-block{ height: 350px; text-align: center; color: #ffffff; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; background-size: cover; background-repeat: no-repeat; background-position: center;}
+.diensten .diensten-block:hover { transform: scale(1.05);}
+.diensten-block-a, .diensten-block-a:hover { text-decoration: none!important;}
+.diensten .diensten-block{ height: 350px; text-align: center; color: #ffffff; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; background-size: cover; background-repeat: no-repeat; background-position: center; transition: .3s ease;}
 .diensten .col-lg-3 .diensten-block p { height: 54px; padding-top: 136px; padding-bottom: 214px;}
+.diensten .col-lg-3 .diensten-block p { background-color: rgba(0, 0, 0, .3);}
 
 
 /* portfolio area */
@@ -73,7 +78,7 @@ img.portfolio-image-2 { margin-top: -170px; margin-left: 285px;}
 #reviews .col-md-7 { background-color: #EDDBCC;}
 .reviews-box { padding: 25px 300px 75px 0px;}
 #reviews .col-md-7 .container { margin-left: 75px;}
-.reviews-box img { width: 400px; height: 400px; position: absolute; margin-left: -770px; margin-top: -400px; object-fit: cover;}
+.reviews-box img { width: 400px; height: 400px; position: absolute; margin-left: -125%; margin-top: -400px; object-fit: cover;}
 .carousel-caption:not(#caption-0) {display: none;}
 
 /* contact area */
@@ -87,13 +92,14 @@ img.portfolio-image-2 { margin-top: -170px; margin-left: 285px;}
 .contact-button { width: 100%;}
 .contact .col-md-7 { border-right: 1px solid rgba(0, 0, 0, .1); padding-right: 75px;}
 .contact .col-md-5 { padding-left: 75px;}
+.contact-a { text-decoration: none;}
 
 /* footer area */
 #footer { background-color: #000000!important;}
 p.footer-head { color: #ffffff; font-weight: 700; font-size: 20px;}
 ul.footer-text { padding: 0; margin-top: -10px;}
 ul.footer-text li { list-style-type: none;}
-ul.footer-text li a, ul.footer-text li { color: #d6d3d3; text-decoration: none;}
+ul.footer-text li a, ul.footer-text li { color: #d6d3d3; text-decoration: none; font-family: 'Montserrat', sans-serif!important;}
 ul.footer-text li a:hover { text-decoration: none;}
 
 /* copyright area */
@@ -111,8 +117,79 @@ ul.footer-text li a:hover { text-decoration: none;}
 
 
 /* media query's */
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
     .header h1 {
         width: 65%;
     }
+} */
+
+
+@media screen and (max-width: 893px){
+/* header area */
+.header { top: 35%;}
+.header h1 { width: 80%;}
 }
+
+
+/* about me responsive */
+@media only screen and (max-width:767px){
+    #aboutme .col-lg-6 p {padding-right: 15px;}
+    }
+    
+/* diensten responsive */
+@media only screen and (max-width: 991px){
+    .diensten .col-lg-3 .diensten-block{ margin-bottom: 15px;}
+    .diensten .col-lg-3 .diensten-block p { padding-top: 175px; padding-bottom: 175px;}
+    }
+    
+    /* reviews responsive */
+    @media only screen and (max-width: 1400px){ .reviews-box { padding: 25px 15px 75px 0px;} #reviews .col-md-7 .container { margin-left: 75px;}}
+    @media only screen and (min-width: 1250px) and (max-width: 1400px){ .reviews-box img {margin-left: -130%;}}
+    @media only screen and (min-width: 1150px) and (max-width: 1249px){ .reviews-box img {margin-left: -140%;}}
+    @media only screen and (min-width: 992px) and (max-width: 1149px){ .reviews-box img {margin-left: -150%;}}
+
+    @media only screen and (min-width: 1100px) and (max-width: 1199px){ 
+        img.about-me-picture{ width: 425px; height: 425px; margin-left: 25px!important; margin-top: 75px;}
+    }
+    
+    /* portfolio responsive */
+    @media only screen and (min-width: 992px) and (max-width: 1199px){
+        img.portfolio-image-1 { position: absolute; width: 325px; height: 525px; margin-top: -50px; z-index: 999;}
+        img.portfolio-image-2 { position: absolute; width: 325px; height: 525px; margin-top: -170px; margin-left: 210px;}
+    }
+    
+    /* about me responsive */
+    @media only screen and (min-width: 992px) and (max-width: 1099px){
+        img.about-me-picture{ width: 400px; height: 400px; margin-left: 45px!important; margin-top: 100px;}
+    }
+    
+    @media only screen and (max-width: 991px){
+        img.about-me-picture, img.portfolio-image-1, img.portfolio-image-2  { display: none;}
+        #portfolio { margin-top: 100px; margin-bottom: 100px;}
+        .portfolio-image-mobile { display: block; width: 50%; margin-top: 50px;}
+        #portfolio .col-lg-5 { padding-right: 15px;}
+        img.about-me-picture-mobile { display: block; width: 100%; margin-top: 75px;}
+    }
+    
+    @media only screen and (max-width: 465px){
+        img.about-me-picture, img.portfolio-image-1, img.portfolio-image-2  {display: none;}
+        #aboutme { height: 700px; margin-bottom: 275px; }
+        #portfolio { margin-bottom: 250px; height: 800px; }  
+        .portfolio-image-mobile { display: block; width: 100%; margin-top: 50px; }  
+        img.about-me-picture-mobile { display: block; width: 100%; margin-top: 75px; }
+    }
+    /* reviews responsive */
+    @media only screen and (min-width: 768px) and (max-width: 991px){ 
+        .reviews-box img { width: 350px; height: 350px; margin-left: -550px;}
+    }
+
+    @media only screen and (max-width: 767px){ 
+        .reviews-box img { display: none;} 
+        #reviews .col-md-7 .container { margin-left: 0px;}
+    }
+
+    /* contact responsive */
+    @media only screen and (max-width:767px){
+        .contact .col-md-7 { border-right: none; border-bottom: 1px solid rgba(0, 0, 0, .1); padding-right: 15px; padding-bottom: 50px;}
+        .contact .col-md-5 { padding-left: 15px; padding-top: 50px;}
+    }
