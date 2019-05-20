@@ -257,7 +257,7 @@ font-family: 'Open Sans', sans-serif;
 .diensten-single .balk {
   position: absolute;
   z-index: -10;
-  height: 345px;
+  height: 355px;
   margin-top: 0px;
   margin-left: 16px;
   background-color: #EDDBCC;
@@ -322,6 +322,9 @@ font-family: 'Open Sans', sans-serif;
     margin-top: 0;
     margin-bottom: 0;
   }
+  .diensten-single .col-md-7:nth-child(even) {
+    background-color: #EDDBCC;
+  }
 
   .diensten-single .col-md-7:nth-child(odd) {
     background-color: #ffffff;
@@ -341,6 +344,10 @@ font-family: 'Open Sans', sans-serif;
     width: 400px !important;
     margin-bottom: 40px !important;
     margin-top: 25px;
+  }
+
+  .diensten-single .balk {
+    display: none;
   }
 }
 
