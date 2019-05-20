@@ -24,7 +24,7 @@
                     <img src="<?php the_field("overmij_afbeelding") ?>" alt="overmij">
                     <p><?php the_field("overmij_beschrijving") ?></p>
                     <span id="text"><?php the_field("overmij_beschrijving_2") ?></span>
-                    <a class="standard-button" id="toggle">Read more</a>
+                    <a class="standard-button" id="toggle">Lees meer</a>
                     
                 </div>
             </div>
