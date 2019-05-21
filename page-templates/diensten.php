@@ -9,6 +9,7 @@
 </div>
 
    <?php if(get_field('dienst_aanzetten') == "Ja"): ?>
+   <div id="bruiloften"></div>
 		<div class="diensten-single">
 			<div class="row">
 			<div class="balk"></div>
@@ -31,6 +32,7 @@
 					</div>
 				</div>
 			</div>
+			<div id="videoclips"></div>
 		</div>
 	<?php endif; ?>
 
@@ -58,6 +60,7 @@
 					</div>
 				</div>
 			</div>
+			<div id="feestjes"></div>
 		</div>
 	<?php endif; ?>
 
@@ -84,6 +87,7 @@
 						</div>
 					</div>
 				</div>
+				<div id="wenkbrouwen"></div>
 			</div>
 	<?php endif; ?>
 
