@@ -23,6 +23,7 @@ h1, h2, h3, .standard-h4, li a {font-family: 'Open Sans', sans-serif;}
 h1 {font-size: 60px; font-weight: 700;}
 h2 {font-size: 50px;}
 h3 {font-size: 30px;}
+img {object-fit: cover;}
 
 #menu-navigation li a {font-weight: 700; color: #ffffff!important;}
 p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sans-serif;}
