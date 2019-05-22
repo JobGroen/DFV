@@ -17,7 +17,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Email:</label>
+                        <label for="email">E-mail:</label>
                         <input type="email" id="email" name="email" class="form-control">
                     </div>
 
@@ -37,9 +37,21 @@
                 <div id="status"></div>
             </div>
             <div class="col-md-6">
-            <h3>Agenda</h3>
+            <h3>Mijn Evenementen</h3>
             <div class="calendar"> 
-            	<?php echo do_shortcode("[events_calendar long_events=1 full=0]") ?>
+                <?php echo do_shortcode("[events_list scope='future' limit=5 pagination=1]
+                <div class='event-box'>
+                <p class='event-date'> #_EVENTDATES </p>
+                <div class='row'>
+                    <div class='col-md-4'>
+                        <p class='event-time'> #_EVENTTIMES </p> 
+                    </div>
+                    <div class='col-md-8'>
+                        <p class='event-name'> #_EVENTNAME </p>
+                    </div>
+                </div>        
+                </div>        
+                [/events_list]") ?>
             </div>
             </div>
 
