@@ -20,6 +20,7 @@
     <div class="col-md-9 blog-rightside">
       <div class="blog-righttext">
       <h3><?php the_title();?></h3>
+      <p>Geplaatst op <?php echo get_the_date(); ?> door <?php the_author(); ?></p>
         <?php the_excerpt();?><br>
       <a href="<?php the_permalink();?>" class="standard-button">Lees meer</a>
       </div>
