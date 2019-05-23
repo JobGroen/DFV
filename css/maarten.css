@@ -109,7 +109,13 @@
   font-size: 1.9rem
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 500px) {
+  .sidenav i {
+    font-size: 35px;
+  }
+  .sidenav-content-icons .fa-instagram {
+    margin-right: 20px;
+  }
   .open-menu #sidenav-menu {
     width: 200px;
   }
@@ -292,7 +298,7 @@ font-family: 'Open Sans', sans-serif;
   }
 
   .scrollto-button {
-    display: block;
+    display: inline;
   }
 }
 
@@ -322,13 +328,31 @@ font-family: 'Open Sans', sans-serif;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .diensten-single .col-md-7:nth-child(even) {
-    background-color: #EDDBCC;
+
+  .diensten-single-box {
+    padding: 0;
+  }
+
+  .diensten-single-box {
+    padding: 0px 0px 75px 0px;
+  }
+
+  .diensten-single-right .diensten-single-box {
+    padding: 0px 0px 75px 0px
+  }
+
+  .diensten-single .row {
+    margin-right: 0;
+  }
+
+  .diensten-single-right .row {
+    margin-right: 0;
   }
 
   .diensten-single .col-md-7:nth-child(odd) {
-    background-color: #ffffff;
-  }
+    background-color: red;
+}
+
 
   .diensten-afbeelding-right img {
     display: none;
@@ -344,6 +368,7 @@ font-family: 'Open Sans', sans-serif;
     width: 400px !important;
     margin-bottom: 40px !important;
     margin-top: 25px;
+    margin-left: -8px;
   }
 
   .diensten-single .balk {
