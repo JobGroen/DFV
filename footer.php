@@ -31,7 +31,7 @@
 
 <div id="copyright">
     <div class="container">
-        <p>&copy;2019 Pure Face Art | <a href="#">Sitemap</a></p>
+    <p>&copy;2019 Pure Face Art | <a href="/sitemap_index.xml" target="_blank">Sitemap</a></p>
     </div>
 </div>
 
