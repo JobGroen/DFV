@@ -123,19 +123,16 @@ ul.footer-text li a:hover { text-decoration: none;}
 .blog-leftside .img-fluid { height: 300px;}
 .blog { margin-top: 50px; margin-bottom: 75px!important;}
 
-/* media query's */
-/* @media screen and (max-width: 600px){
-    .header h1 {
-        width: 65%;
-    }
-} */
+/* sticky knop */
+.page-id-13 .sticky-cta-content, .page-id-13 #sticky-toggle{ visibility: hidden!important; display: none!important;}
 
+/* Responsive sticky knop */
+@media only screen and (max-width: 600px){ .sticky-cta-content, #sticky-toggle{ visibility: hidden!important; display: none!important;}}
 
-@media screen and (max-width: 893px){
-/* header area */
-.header { top: 35%;}
-.header h1 { width: 80%;}
-}
+/* Responsive headers fix */
+@media only screen and (max-width: 500px){ .page-id-95 .header h1, .page-id-13 .header h1 { font-size: 30px; width: 90%;}}
+@media only screen and (min-width: 501px) and (max-width: 549px){ .page-id-95 .header h1, .page-id-13 .header h1 { font-size: 45px; width: 90%;}}
+@media screen and (max-width: 893px){ .header { top: 35%;} .header h1 { width: 80%;}}
 
  /* blog responsive */
 @media only screen and (max-width: 767px){
