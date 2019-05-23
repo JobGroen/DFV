@@ -6,7 +6,7 @@
 ?>
 
 <div id="contact-single">
-    <div class="container contact-single">
+    <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="container contact-single">
         <div class="row">
             <div class="col-md-6">
 			<h3>Contact</h3>
@@ -37,20 +37,20 @@
                 <div id="status"></div>
             </div>
             <div class="col-md-6">
-            <h3>Mijn Evenementen</h3>
-            <div class="calendar"> 
+            <h3 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500">Mijn Evenementen</h3>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="calendar">
                 <?php echo do_shortcode("[events_list scope='future' limit=5 pagination=1]
                 <div class='event-box'>
                 <p class='event-date'> #_EVENTDATES </p>
                 <div class='row'>
                     <div class='col-md-4'>
-                        <p class='event-time'> #_EVENTTIMES </p> 
+                        <p class='event-time'> #_EVENTTIMES </p>
                     </div>
                     <div class='col-md-8'>
                         <p class='event-name'> #_EVENTNAME </p>
                     </div>
-                </div>        
-                </div>        
+                </div>
+                </div>
                 [/events_list]") ?>
             </div>
             </div>

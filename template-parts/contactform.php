@@ -9,16 +9,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>Een afspraak maken?</h2>
+                <h2 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true">Een afspraak maken?</h2>
             </div>
             <div class="col-md-7">
-            <p>Vul hieronder dan het contactformulier in met je wensen en dan beantwoorden wij zo snel mogelijk.</p>
+            <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-delay="50">Vul hieronder dan het contactformulier in met je wensen en dan beantwoorden wij zo snel mogelijk.</p>
             </div>
         </div>
     </div>
     <div class="container contact">
         <div class="row">
-            <div class="col-md-7">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="col-md-7">
             <form id="contact-form" name="contact-form" action="mail.php" method="POST">
                     <div class="form-group">
                         <label for="name">Naam:</label>
@@ -46,7 +46,7 @@
                 <div id="status"></div>
             </div>
 
-            <div class="col-md-5">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="col-md-5">
                 <h3>Contactgegevens:</h3>
                 <p>Voorbeeldlaan 57<br>
                     1742 RL<br>
