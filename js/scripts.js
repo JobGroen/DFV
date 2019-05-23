@@ -150,3 +150,29 @@ function validateForm() {
         }
     });
 }
+
+jQuery(document).ready(function($) {
+	//sticky cta content
+    let calltoaction = "<div class='sticky-cta-content'><p class='sticky-title'> Een afspraak maken? </p><p> Klik dan hieronder en neem contact op! </p><a class='standard-button' href='/contact'> Neem contact op </a></div>";
+	$("body").append(calltoaction);
+	//mailbox
+	let calltoaction1 = "<div id='sticky-toggle'><i class='far fa-envelope'></i></div>";
+	$("body").append(calltoaction1);
+
+	$("#sticky-toggle").click(function() {
+        $(".sticky-cta-content").toggleClass("sticky-active");
+    });
+
+	stop = false;
+    $(document).scroll(function(e) {
+        if (stop == false){
+            var y = $(document).scrollTop();
+            console.log(y);
+            if (y >800 && !$(".sticky-cta-content").hasClass("sticky-active")) {
+                console.log('true')
+                $(".sticky-cta-content").toggleClass("sticky-active");
+                stop = true;
+            }
+        }
+    });
+});
