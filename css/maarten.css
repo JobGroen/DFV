@@ -322,12 +322,24 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
+@media screen and (max-width: 834px) {
+  .diensten-single-right .diensten-single-box {
+    padding: 0px 0px 75px 0px;
+    margin-left: 0px;
+}
+.diensten-single-right h2 {
+  margin-left: 0px;
+}
+}
 @media screen and (max-width: 515px) {
 
   .diensten-single {
     margin-top: 0;
     margin-bottom: 0;
   }
+  .diensten-single:nth-child(odd) .col-md-7 {
+    background-color: #EDDBCC;
+}
 
   .diensten-single-box {
     padding: 0;
@@ -338,7 +350,7 @@ font-family: 'Open Sans', sans-serif;
   }
 
   .diensten-single-right .diensten-single-box {
-    padding: 0px 0px 75px 0px
+    padding: 0px 0px 75px 0px;
   }
 
   .diensten-single .row {
@@ -348,10 +360,6 @@ font-family: 'Open Sans', sans-serif;
   .diensten-single-right .row {
     margin-right: 0;
   }
-
-  .diensten-single .col-md-7:nth-child(odd) {
-    background-color: red;
-}
 
 
   .diensten-afbeelding-right img {
