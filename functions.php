@@ -7,6 +7,10 @@ function load_stylesheets()
     array(), false, 'all');
     wp_enqueue_style('bootstrap');
 
+    wp_register_style('bootstrap', get_template_directory_uri() . '/css/aos.css',
+    array(), false, 'all');
+    wp_enqueue_style('aos');
+
     wp_register_style('style', get_template_directory_uri() . '/style.css',
     array(), false, 'all');
     wp_enqueue_style('style');
@@ -43,7 +47,9 @@ add_action('wp_enqueue_scripts', 'include_bootstrap');
 function loadjs()
 {
     wp_register_script( 'isotope', get_template_directory_uri().'/js/isotope.min.js', array('jquery'),  true );
+    wp_register_script('aos', get_template_directory_uri() . '/js/aos.js', '', 1, true);
     wp_register_script('customjs', get_template_directory_uri() . '/js/scripts.js', '', 1, true);
+    wp_enqueue_script('aos');
     wp_enqueue_script('isotope');
     wp_enqueue_script('customjs');
 }
