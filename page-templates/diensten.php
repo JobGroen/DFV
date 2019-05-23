@@ -4,7 +4,7 @@
 
 <div id="header" style="background-image: url(<?php echo esc_url($featured_img_url); ?>)">
 	<div class="header" >
-		<h1 class="standard-h1"><?php the_title();?></h1>
+		<h1 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="standard-h1"><?php the_title();?></h1>
 	</div>
 </div>
 
@@ -21,13 +21,13 @@
 				<div class="col-md-7">
 					<div class="container">
 					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding'); ?>" alt="dienst">
-						<h2><?php the_field('dienst_titel');?></h2>
+						<h2 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_titel');?></h2>
 						<div class="diensten-single-box">
-							<img src="<?php the_field('dienst_afbeelding'); ?>" alt="dienst">
-							<p><?php the_field('dienst_beschrijving'); ?></p>
+							<img data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" src="<?php the_field('dienst_afbeelding'); ?>" alt="dienst">
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_beschrijving'); ?></p>
 
-							<p class="diensten-prijs">€ <?php the_field('prijs'); ?>,-</p>
-							<a class="standard-button scrollto-button">Afspraak maken</a>
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="diensten-prijs">€ <?php the_field('prijs'); ?>,-</p>
+							<a data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="standard-button scrollto-button">Afspraak maken</a>
 						</div>
 					</div>
 				</div>
@@ -43,14 +43,14 @@
 				<div class="col-md-7">
 				<div class="balk"></div>
 					<div class="container diensten-single-right">
-					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_2'); ?>" alt="dienst">
-						<h2><?php the_field('dienst_titel_2');?></h2>
+					<img data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_2'); ?>" alt="dienst">
+						<h2 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_titel_2');?></h2>
 						<div class="diensten-single-box diensten-afbeelding-right">
-							<p><?php the_field('dienst_beschrijving_2'); ?></p>
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_beschrijving_2'); ?></p>
 
-							<p class="diensten-prijs">€ <?php the_field('prijs_2'); ?>,-</p>
-							<a class="standard-button scrollto-button">Afspraak maken</a>
-							<img src="<?php the_field('dienst_afbeelding_2'); ?>" alt="dienst">
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="diensten-prijs">€ <?php the_field('prijs_2'); ?>,-</p>
+							<a data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="standard-button scrollto-button">Afspraak maken</a>
+							<img data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" src="<?php the_field('dienst_afbeelding_2'); ?>" alt="dienst">
 						</div>
 					</div>
 				</div>
@@ -75,14 +75,14 @@
 
 					<div class="col-md-7">
 						<div class="container">
-						<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_3'); ?>" alt="dienst">
-							<h2><?php the_field('dienst_titel_3');?></h2>
+						<img data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_3'); ?>" alt="dienst">
+							<h2 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_titel_3');?></h2>
 							<div class="diensten-single-box">
-								<img src="<?php the_field('dienst_afbeelding_3'); ?>" alt="dienst">
-								<p><?php the_field('dienst_beschrijving_3'); ?></p>
+								<img data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" src="<?php the_field('dienst_afbeelding_3'); ?>" alt="dienst">
+								<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_beschrijving_3'); ?></p>
 
-								<p class="diensten-prijs">€ <?php the_field('prijs_3'); ?>,-</p>
-								<a class="standard-button scrollto-button">Afspraak maken</a>
+								<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="diensten-prijs">€ <?php the_field('prijs_3'); ?>,-</p>
+								<a data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="standard-button scrollto-button">Afspraak maken</a>
 							</div>
 						</div>
 					</div>
@@ -98,14 +98,14 @@
 				<div class="col-md-7">
 				<div class="balk"></div>
 					<div class="container diensten-single-right">
-					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_4'); ?>" alt="dienst">
-						<h2><?php the_field('dienst_titel_4');?></h2>
+					<img data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_4'); ?>" alt="dienst">
+						<h2 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_titel_4');?></h2>
 						<div class="diensten-single-box diensten-afbeelding-right">
-							<p><?php the_field('dienst_beschrijving_4'); ?></p>
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_beschrijving_4'); ?></p>
 
-							<p class="diensten-prijs">€ <?php the_field('prijs_4'); ?>,-</p>
-							<a class="standard-button scrollto-button">Afspraak maken</a>
-							<img src="<?php the_field('dienst_afbeelding_4'); ?>" alt="dienst">
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="diensten-prijs">€ <?php the_field('prijs_4'); ?>,-</p>
+							<a data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="standard-button scrollto-button">Afspraak maken</a>
+							<img data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" src="<?php the_field('dienst_afbeelding_4'); ?>" alt="dienst">
 						</div>
 					</div>
 				</div>
@@ -129,14 +129,14 @@
 
 				<div class="col-md-7">
 					<div class="container">
-					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_5'); ?>" alt="dienst">
-						<h2><?php the_field('dienst_titel_5');?></h2>
+					<img data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_5'); ?>" alt="dienst">
+						<h2 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_titel_5');?></h2>
 						<div class="diensten-single-box">
-							<img src="<?php the_field('dienst_afbeelding_5'); ?>" alt="dienst">
-							<p><?php the_field('dienst_beschrijving_5'); ?></p>
+							<img data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" src="<?php the_field('dienst_afbeelding_5'); ?>" alt="dienst">
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_beschrijving_5'); ?></p>
 
-							<p class="diensten-prijs">€ <?php the_field('prijs_5'); ?>,-</p>
-							<a class="standard-button scrollto-button">Afspraak maken</a>
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="diensten-prijs">€ <?php the_field('prijs_5'); ?>,-</p>
+							<a data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="standard-button scrollto-button">Afspraak maken</a>
 						</div>
 					</div>
 				</div>
@@ -151,14 +151,14 @@
 				<div class="col-md-7">
 				<div class="balk"></div>
 					<div class="container diensten-single-right">
-					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_6'); ?>" alt="dienst">
-						<h2><?php the_field('dienst_titel_6');?></h2>
+					<img data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_6'); ?>" alt="dienst">
+						<h2 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_titel_6');?></h2>
 						<div class="diensten-single-box diensten-afbeelding-right">
-							<p><?php the_field('dienst_beschrijving_6'); ?></p>
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_beschrijving_6'); ?></p>
 
-							<p class="diensten-prijs">€ <?php the_field('prijs_6'); ?>,-</p>
-							<a class="standard-button scrollto-button">Afspraak maken</a>
-							<img src="<?php the_field('dienst_afbeelding_6'); ?>" alt="dienst">
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="diensten-prijs">€ <?php the_field('prijs_6'); ?>,-</p>
+							<a data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="standard-button scrollto-button">Afspraak maken</a>
+							<img data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" src="<?php the_field('dienst_afbeelding_6'); ?>" alt="dienst">
 						</div>
 					</div>
 				</div>
@@ -182,14 +182,14 @@
 
 				<div class="col-md-7">
 					<div class="container">
-					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_7'); ?>" alt="dienst">
+					<img data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_7'); ?>" alt="dienst">
 						<h2><?php the_field('dienst_titel_7');?></h2>
 						<div class="diensten-single-box">
-							<img src="<?php the_field('dienst_afbeelding_7'); ?>" alt="dienst">
-							<p><?php the_field('dienst_beschrijving_7'); ?></p>
+							<img data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" src="<?php the_field('dienst_afbeelding_7'); ?>" alt="dienst">
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_beschrijving_7'); ?></p>
 
-							<p class="diensten-prijs">€ <?php the_field('prijs_7'); ?>,-</p>
-							<a class="standard-button scrollto-button">Afspraak maken</a>
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="diensten-prijs">€ <?php the_field('prijs_7'); ?>,-</p>
+							<a data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="standard-button scrollto-button">Afspraak maken</a>
 						</div>
 					</div>
 				</div>
@@ -204,14 +204,14 @@
 				<div class="col-md-7">
 				<div class="balk"></div>
 					<div class="container diensten-single-right">
-					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_8'); ?>" alt="dienst">
-						<h2><?php the_field('dienst_titel_8');?></h2>
+					<img data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_8'); ?>" alt="dienst">
+						<h2 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_titel_8');?></h2>
 						<div class="diensten-single-box diensten-afbeelding-right">
-							<p><?php the_field('dienst_beschrijving_8'); ?></p>
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_beschrijving_8'); ?></p>
 
-							<p class="diensten-prijs">€ <?php the_field('prijs_8'); ?>,-</p>
-							<a class="standard-button scrollto-button">Afspraak maken</a>
-							<img src="<?php the_field('dienst_afbeelding_8'); ?>" alt="dienst">
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="diensten-prijs">€ <?php the_field('prijs_8'); ?>,-</p>
+							<a data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="standard-button scrollto-button">Afspraak maken</a>
+							<img data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" src="<?php the_field('dienst_afbeelding_8'); ?>" alt="dienst">
 						</div>
 					</div>
 				</div>
@@ -235,14 +235,14 @@
 
 				<div class="col-md-7">
 					<div class="container">
-					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_9'); ?>" alt="dienst">
-						<h2><?php the_field('dienst_titel_9');?></h2>
+					<img data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_9'); ?>" alt="dienst">
+						<h2 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_titel_9');?></h2>
 						<div class="diensten-single-box">
-							<img src="<?php the_field('dienst_afbeelding_9'); ?>" alt="dienst">
-							<p><?php the_field('dienst_beschrijving_9'); ?></p>
-							<a class="standard-button scrollto-button">Afspraak maken</a>
+							<img data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" src="<?php the_field('dienst_afbeelding_9'); ?>" alt="dienst">
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_beschrijving_9'); ?></p>
+							<a data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="standard-button scrollto-button">Afspraak maken</a>
 
-							<p class="diensten-prijs">€ <?php the_field('prijs_9'); ?></p>
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="diensten-prijs">€ <?php the_field('prijs_9'); ?></p>
 						</div>
 					</div>
 				</div>
@@ -257,14 +257,14 @@
 				<div class="col-md-7">
 				<div class="balk"></div>
 					<div class="container diensten-single-right">
-					<img class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_10'); ?>" alt="dienst">
-						<h2><?php the_field('dienst_titel_10');?></h2>
+					<img data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="portfolio-image-mobile" src="<?php the_field('dienst_afbeelding_10'); ?>" alt="dienst">
+						<h2 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_titel_10');?></h2>
 						<div class="diensten-single-box diensten-afbeelding-right">
-							<p><?php the_field('dienst_beschrijving_10'); ?></p>
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field('dienst_beschrijving_10'); ?></p>
 
-							<p class="diensten-prijs">€ <?php the_field('prijs_10'); ?>,-</p>
-							<a class="standard-button scrollto-button">Afspraak maken</a>
-							<img src="<?php the_field('dienst_afbeelding_10'); ?>" alt="dienst">
+							<p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="diensten-prijs">€ <?php the_field('prijs_10'); ?>,-</p>
+							<a data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="standard-button scrollto-button">Afspraak maken</a>
+							<img data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" src="<?php the_field('dienst_afbeelding_10'); ?>" alt="dienst">
 						</div>
 					</div>
 				</div>
