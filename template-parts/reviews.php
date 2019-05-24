@@ -17,12 +17,12 @@ $link3 = get_field('review_3_portfolio_link');
             </div>
         </div>
 
-        <div class="col-md-7">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" class="col-md-7">
             <div class="container">
                 <h2>Reviews</h2>
                 <div class="reviews-box">
 
-                    <div id="reviewslider" class="carousel slide" data-ride="carousel">
+                    <div  id="reviewslider" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <p><i>"<?php the_field('review_1_tekst');?>"</i></p>

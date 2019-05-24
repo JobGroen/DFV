@@ -11,14 +11,14 @@
             <div class="carousel-item" style="background-image:url(<?php the_field('carousel_afbeelding_2'); ?>)"></div>
         <?php endif; ?>
         <?php if( get_field('carousel_afbeelding_3') ): ?>
-            <div class="carousel-item" style="background-image:url(<?php the_field('carousel_afbeelding_3'); ?>)"></div>  
+            <div class="carousel-item" style="background-image:url(<?php the_field('carousel_afbeelding_3'); ?>)"></div>
         <?php endif; ?>
       </div>
     </div>
 </div>
     <div class="header">
-        <h1 class="standard-h1"><?php the_title();?></h1>
-        <p class="header-lead"><?php the_field('header_lead');?></p>
+        <h1 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="standard-h1"><?php the_title();?></h1>
+        <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="header-lead"><?php the_field('header_lead');?></p>
     </div>
 </div>
 
