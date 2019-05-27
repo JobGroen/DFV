@@ -50,7 +50,7 @@ p.sticky-title {
     font-weight: bold;
     font-family: 'Open Sans';
     font-size: 25px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 .sticky-cta-content .standard-button:hover {
