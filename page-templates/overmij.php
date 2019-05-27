@@ -25,7 +25,7 @@
                     <p><?php the_field("overmij_beschrijving") ?></p>
                     <span id="text"><?php the_field("overmij_beschrijving_2") ?></span>
                     <a class="standard-button" id="toggle">Lees meer</a>
-
+                    
                 </div>
             </div>
         </div>
@@ -34,7 +34,9 @@
 
 <div class="balk"></div>
 <div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="true" class="container">
-<div class="aboutme-video"> <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe> </div>
+<div class="aboutme-video embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="<?php the_field("overmij_video") ?>" allowfullscreen></iframe>
+</div>
 </div>
 
 <?php get_template_part( 'template-parts/contactform'); ?>
