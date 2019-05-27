@@ -4,7 +4,7 @@
 
 <div id="header" style="background-image: url(<?php echo esc_url($featured_img_url); ?>)">
 	<div class="header" >
-		<h1 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="standard-h1"><?php the_title();?></h1>
+		<h1 class="standard-h1"><?php the_title();?></h1>
 	</div>
 </div>
 

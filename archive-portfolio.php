@@ -30,7 +30,7 @@
         <a href="<?php the_permalink();?>">
             <?php if(has_post_thumbnail()):?>
             <figure  class="<?php echo $termsString; ?> photos-item">
-                <img data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" src="<?php the_post_thumbnail_url();?>" alt="<?php the_title();?>" class="img-fluid">
+                <img data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="true" src="<?php the_post_thumbnail_url();?>" alt="<?php the_title();?>" class="img-fluid">
                 <figcaption class="img-title">
                     <p><?php the_title();?></p>
             </figure>

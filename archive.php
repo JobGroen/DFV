@@ -4,30 +4,30 @@
 
 <div id="header" style="background-image: url('/wp-content/uploads/2019/05/wenkbrouwen-wimpers.jpg')">
   <div class="header">
-    <h1 class="standard-h1">Blog</h1>
+    <h1 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="standard-h1">Blog</h1>
   </div>
 </div>
 
 <div class="container blog">
   <?php if (have_posts()) : while(have_posts()) : the_post();?>
 
-  <div class="row pt-4 pb-4 no-gutters">
+  <div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="true" class="row pt-4 pb-4 no-gutters">
     <div class="col-md-3 blog-leftside">
       <?php if(has_post_thumbnail()):?>
-       <img data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" src="<?php the_post_thumbnail_url('largest');?>" class="img-fluid">
+       <img src="<?php the_post_thumbnail_url('largest');?>" class="img-fluid">
       <?php endif;?>
     </div>
     <div class="col-md-9 blog-rightside">
       <div class="blog-righttext">
-      <h3 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_title();?></h3>
-      <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500">Geplaatst op <?php echo get_the_date(); ?> door <?php the_author(); ?></p>
-		  <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500">
+      <h3><?php the_title();?></h3>
+      <p>Geplaatst op <?php echo get_the_date(); ?> door <?php the_author(); ?></p>
+		  <p>
 			  <?php $excerpt = get_the_excerpt();
 			  	echo $excerpt;
 			  ?>
 		  </p>
 
-      <a data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" href="<?php the_permalink();?>" class="standard-button">Lees meer</a>
+      <a href="<?php the_permalink();?>" class="standard-button">Lees meer</a>
       </div>
     </div>
   </div>

@@ -8,7 +8,7 @@
     </div>
 </div>
 
-<div class="aboutme-single">
+<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="true" class="aboutme-single">
     <div class="row">
         <div class="col-md-5">
             <div class="container">
@@ -18,13 +18,13 @@
         <div class="col-md-7">
             <div class="container">
                 <div class="balk"></div>
-                <img data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="aboutme-image-mobile" src="<?php the_field("overmij_afbeelding") ?>" alt="overmij">
-                <h2 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field("overmij_titel") ?></h2>
+                <img class="aboutme-image-mobile" src="<?php the_field("overmij_afbeelding") ?>" alt="overmij">
+                <h2 ><?php the_field("overmij_titel") ?></h2>
                 <div class="aboutme-single-box">
-                    <img data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" src="<?php the_field("overmij_afbeelding") ?>" alt="overmij">
-                    <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500"><?php the_field("overmij_beschrijving") ?></p>
-                    <span data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" id="text"><?php the_field("overmij_beschrijving_2") ?></span>
-                    <a data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="standard-button" id="toggle">Lees meer</a>
+                    <img src="<?php the_field("overmij_afbeelding") ?>" alt="overmij">
+                    <p><?php the_field("overmij_beschrijving") ?></p>
+                    <span id="text"><?php the_field("overmij_beschrijving_2") ?></span>
+                    <a class="standard-button" id="toggle">Lees meer</a>
 
                 </div>
             </div>
@@ -33,8 +33,8 @@
 </div>
 
 <div class="balk"></div>
-<div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-duration="500" class="container">
-<iframe class="aboutme-video" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="true" class="container">
+<div class="aboutme-video"> <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe> </div>
 </div>
 
 <?php get_template_part( 'template-parts/contactform'); ?>
