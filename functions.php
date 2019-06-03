@@ -14,18 +14,6 @@ function load_stylesheets()
     wp_register_style('style', get_template_directory_uri() . '/style.css',
     array(), false, 'all');
     wp_enqueue_style('style');
-
-    wp_register_style('maarten', get_template_directory_uri() . '/css/maarten.css',
-    array(), false, 'all');
-    wp_enqueue_style('maarten');
-
-    wp_register_style('job', get_template_directory_uri() . '/css/job.css',
-    array(), false, 'all');
-    wp_enqueue_style('job');
-
-    wp_register_style('jort', get_template_directory_uri() . '/css/jort.css',
-    array(), false, 'all');
-    wp_enqueue_style('jort');
 }
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 
