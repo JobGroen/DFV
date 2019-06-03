@@ -88,6 +88,40 @@ img.portfolio-image-2 { margin-top: -170px; margin-left: 285px;}
 .contact p i { transform: scale(1.3); margin-right: 10px;}
 .contact .phone-upside { transform: scaleX(-1)!important;}
 
+/* contact form en calander */
+table.em-calendar td { width: 90px; height: 81px; user-select: none;}
+table.em-calendar td.eventful-today { background-color: #cfcfcf61; border-radius: 20px;}
+.days-names { font-weight: 600; text-transform: capitalize;}
+.em-calnav { text-decoration: none; }
+.calendar { background-color: white; font-family: 'Montserrat', sans-serif; height: 83.8%;}
+.calendar td { padding: 10px 0; border-top: 1px solid #ededed;}
+.calendar td:nth-child(2) { padding-left: 15px;}
+.calendar .row { margin-right: 0; margin-left: 0; border-bottom: 1px solid #6c6c6c; }
+#contact-single {  background-color: #EDDBCC; }
+.contact-single {  padding-top: 30px;  padding-right: 30px;  padding-bottom: 100px; }
+.contact-single h3 { margin-bottom: 50px;}
+#contact-form { margin-top: -33px;}
+.contact-single .phone-upside { transform: scaleX(-1)!important;}
+.contact-single input {  height: 50px;}
+.contact-button { width: 100%; }
+.contact-single .col-md-5 { padding-left: 75px;}
+#location p i {  transform: scale(1.3); margin-right: 10px; }
+#location { padding: 30px 0; margin: 0 0 50px 0;}
+#location-title { margin: -50px 0 50px 0; }
+.event-info { margin: 0 auto; width: 50%; padding: 20px; background-color: #ffffffb6; color: #666;}
+.events-table { margin-left: 10px; margin-bottom: 10px; }
+.event-date { padding-left: 15px; padding-bottom: 5px; margin: 0;}
+.event-box { padding: 25px 25px 0 25px;}
+
+/* single blog post */
+.single-post-container { padding-top: 5%; padding-left: 15%; padding-right: 15%; padding-bottom: 10%; line-height: 35px; letter-spacing: 1px;}
+@media (max-width: 500px) { h1.single-post-header { font-size: 35px; letter-spacing: 10px;}}
+.blog-quote { text-align: left; padding-bottom: 20px;}
+@media (max-width: 500px) {.single-post-container { padding-left: 10%; padding-right: 10%; letter-spacing: 0;}}
+.blog-nav { padding-left: 15%; padding-right: 15%; padding-bottom: 5%;}
+.blog-nav a { text-decoration: none;}
+.right-align-nav { text-align: right;}
+
 /* contact formulier */
 .contact input { height: 50px;}
 .contact-button { width: 100%;}
