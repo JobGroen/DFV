@@ -33,7 +33,7 @@ p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sa
 #diensten h2, #contact h2, #reviews h2, #portfolio h2, .diensten-single h2 { margin-top: -35px;}
 
 .standard-button { border: 2px solid #000000; text-decoration: none; border-radius: 5px; padding: 10px 30px; color: #000000; transition: .3s ease;}
-.standard-button:hover { background: #000000; text-decoration: none; color: #ffffff; transform: scale(1.05)!important;}
+.standard-button:hover { background: #000000; text-decoration: none; color: #ffffff !important; transform: scale(1.05)!important;}
 .standard-button::after { font-family: "Font Awesome 5 Free"; font-weight: 900; content:"\f105"; margin-left: 25px;}
 
 /* navigation area */
@@ -41,7 +41,7 @@ p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sa
 .fa-bars {font-size: 30px; }
 
 .navbar { color:black; background-color: transparent!important; box-shadow: none !important;}
-.sidenav-toggle { padding: .25rem .75rem; font-size: 1.4rem; line-height: 1; background-color: transparent; border: 1px solid transparent; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-radius: .25rem; outline:none !important; color: white;} 
+.sidenav-toggle { padding: .25rem .75rem; font-size: 1.4rem; line-height: 1; background-color: transparent; border: 1px solid transparent; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-radius: .25rem; outline:none !important; color: white;}
 .sidenav-toggle::-moz-focus-inner { border: 0 !important;}
 .sidenav-toggle .fa-times { display: none;}
 .post-type-archive-portfolio .navbar { background-color: rgba(255, 255, 255, 0.9) !important; box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1) !important;}
@@ -77,13 +77,13 @@ p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sa
 .portfolio-image-gallery {
   /* Prevent vertical gaps */
   line-height: 0;
-   
+
   -webkit-column-count: 3;
   -webkit-column-gap:   0px;
   -moz-column-count:    5;
   -moz-column-gap:      0px;
   column-count:         3;
-  column-gap:           0px;  
+  column-gap:           0px;
 }
 
 .portfolio-image-gallery img {
@@ -137,15 +137,15 @@ p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sa
 .open-menu .sidenav-toggle { z-index: 25;}
 .open-menu .sidenav-toggle .fa-bars {display: none;}
 .open-menu .sidenav-toggle .fa-times { display: block; font-size: 1.9rem}
-  
+
 @media screen and (max-width: 500px) {
     .sidenav i { font-size: 35px; }
     .sidenav-content-icons .fa-instagram { margin-right: 20px;}
     .open-menu #sidenav-menu { width: 200px;}
     .open-menu #main-content { margin-right: 200px;}
   }
-  
-  
+
+
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a, .sidenav i {font-size: 18px;}
@@ -263,7 +263,7 @@ table.em-calendar td.eventful-today { background-color: #cfcfcf61; border-radius
 .event-box { padding: 25px 25px 0 25px;}
 
 /* single blog post */
-.single-post-container { padding-top: 5%; padding-left: 15%; padding-right: 15%; padding-bottom: 10%; line-height: 35px; letter-spacing: 1px;}
+.single-post-container { padding-top: 5%; padding-left: 15%; padding-right: 15%; padding-bottom: 10%;}
 @media (max-width: 500px) { h1.single-post-header { font-size: 35px; letter-spacing: 10px;}}
 .blog-quote { text-align: left; padding-bottom: 20px;}
 @media (max-width: 500px) {.single-post-container { padding-left: 10%; padding-right: 10%; letter-spacing: 0;}}
@@ -343,34 +343,34 @@ p.sticky-title { font-weight: bold; font-family: 'Open Sans'; font-size: 25px; m
 @media only screen and (max-width:767px){
     #aboutme .col-lg-6 p {padding-right: 15px;}
     }
-    
+
 /* diensten responsive */
 @media only screen and (max-width: 991px){
     .diensten .col-lg-3 .diensten-block{ margin-bottom: 15px;}
     .diensten .col-lg-3 .diensten-block p { padding-top: 175px; padding-bottom: 175px;}
     }
-    
+
     /* reviews responsive */
     @media only screen and (max-width: 1400px){ .reviews-box { padding: 25px 15px 75px 0px;} #reviews .col-md-7 .container { margin-left: 75px;}}
     @media only screen and (min-width: 1250px) and (max-width: 1400px){ .reviews-box img {margin-left: -130%;}}
     @media only screen and (min-width: 1150px) and (max-width: 1249px){ .reviews-box img {margin-left: -140%;}}
     @media only screen and (min-width: 992px) and (max-width: 1149px){ .reviews-box img {margin-left: -150%;}}
 
-    @media only screen and (min-width: 1100px) and (max-width: 1199px){ 
+    @media only screen and (min-width: 1100px) and (max-width: 1199px){
         img.about-me-picture{ width: 425px; height: 425px; margin-left: 25px!important; margin-top: 75px;}
     }
-    
+
     /* portfolio responsive */
     @media only screen and (min-width: 992px) and (max-width: 1199px){
         img.portfolio-image-1 { position: absolute; width: 325px; height: 525px; margin-top: -50px; z-index: 999;}
         img.portfolio-image-2 { position: absolute; width: 325px; height: 525px; margin-top: -170px; margin-left: 210px;}
     }
-    
+
     /* about me responsive */
     @media only screen and (min-width: 992px) and (max-width: 1099px){
         img.about-me-picture{ width: 400px; height: 400px; margin-left: 45px!important; margin-top: 100px;}
     }
-    
+
     @media only screen and (max-width: 991px){
         img.about-me-picture, img.portfolio-image-1, img.portfolio-image-2  { display: none;}
         #portfolio { margin-top: 100px; margin-bottom: 100px;}
@@ -380,21 +380,21 @@ p.sticky-title { font-weight: bold; font-family: 'Open Sans'; font-size: 25px; m
         .diensten .col-lg-3 .diensten-block{ margin-bottom: 15px;}
         .diensten .col-lg-3 .diensten-block p { padding-top: 175px; padding-bottom: 175px;}
     }
-    
+
     @media only screen and (max-width: 465px){
         img.about-me-picture, img.portfolio-image-1, img.portfolio-image-2  {display: none;}
         #aboutme { height: 700px; margin-bottom: 275px; }
-        #portfolio { margin-bottom: 250px; height: 800px; }  
-        .portfolio-image-mobile { display: block; width: 100%; margin-top: 50px; }  
+        #portfolio { margin-bottom: 250px; height: 800px; }
+        .portfolio-image-mobile { display: block; width: 100%; margin-top: 50px; }
         img.about-me-picture-mobile { display: block; width: 100%; margin-top: 75px; }
     }
     /* reviews responsive */
-    @media only screen and (min-width: 768px) and (max-width: 991px){ 
+    @media only screen and (min-width: 768px) and (max-width: 991px){
         .reviews-box img { width: 350px; height: 350px; margin-left: -550px;}
     }
 
-    @media only screen and (max-width: 767px){ 
-        .reviews-box img { display: none;} 
+    @media only screen and (max-width: 767px){
+        .reviews-box img { display: none;}
         #reviews .col-md-7 .container { margin-left: 0px;}
     }
 
