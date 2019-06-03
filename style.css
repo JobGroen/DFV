@@ -56,6 +56,75 @@ p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sa
 .header h1 { margin: 0 auto; width: 50%; padding: 20px; letter-spacing: 15px; border: 2px solid #ffffff; }
 .header-lead { font-size: 20px; padding-top: 15px; letter-spacing: 5px; }
 
+/* Header background carousel */
+#background-carousel{ width:100%; height:100%; }
+.carousel, .carousel-inner { width:100%; height:100%; overflow:hidden;}
+.carousel-item { width:100%; height:100%; background-position:center center; background-size:cover;}
+
+/* Image grid portfolio */
+.portfolio-quote { text-align: center; font-style: italic; }
+#photos { display: flex; flex-wrap: wrap;}
+#photos img {width: 100% !important; height: auto !important; margin-bottom: 0 !important;}
+.photos-item { position: relative; flex-direction: row; width: calc(100% / 3); margin-bottom: 0 !important;}
+.img-title { position: absolute; top: 0; margin: 0; height: 100%; width: 100%; text-align: center; display: none; background-color: rgba(0, 0, 0, 0.6);}
+.img-title p { position: absolute; color: #fff; top: 50%; width: 100%; text-align: center;}
+
+@media (max-width: 800px) { .photos-item { width: calc(100% / 2);}}
+
+
+/* Portfolio singel page image gallery */
+
+.portfolio-image-gallery {
+  /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px;  
+}
+
+.portfolio-image-gallery img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 800px) {
+  .portfolio-image-gallery {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  .portfolio-image-gallery {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+}
+}
+
+/* About me page */
+.aboutme-single { margin-top: 100px; margin-bottom: 100px; margin-right:15px;}
+.aboutme-single-box img { width: 300px; height: 300px; position: absolute; margin-left: -310px; margin-top: -5px; object-fit: cover;}
+.aboutme-video {  margin-top: -140px; margin-bottom: 80px;}
+.aboutme-image-mobile { display: none;}
+#text{ display:none; }
+.aboutme-single .balk { position: absolute; z-index: -10; height: 345px; margin-top: 30px; margin-left: -30px; background-color: #EDDBCC;}
+.balk { width: 100%; padding-bottom: 15%; background-position: center; background-color: #EDDBCC; margin-top: 100px;}
+
+@media screen and (max-width: 768px) { .aboutme-video { margin-top: -55px;}}
+
+@media screen and (max-width: 515px) {
+.aboutme-video { margin-top: 0; }
+.aboutme-single { margin-top: 20px; }
+.aboutme-single-box img { display: none;}
+.aboutme-single .aboutme-image-mobile { display: block !important; height: 400px !important; width: 400px !important; margin-bottom: 40px !important; margin-top: 25px; margin-left: -20px;}
+}
+
 /* Side nav menu */
 .sidenav { height: 100%; width: 0; position: fixed; z-index: 1; top: 0; right: 0; background-color: #EDDBCC; overflow-x: hidden; transition: 0.5s; padding-top: 60px; text-align: right;}
 .sidenav .sidenav-content a { padding: 8px 0px 8px 6px;; text-decoration: none; font-size: 25px; display: block; transition: 0.3s;}
@@ -97,6 +166,52 @@ img.about-me-picture{ width: 450px; height: 450px; position: absolute; margin-le
 .diensten .diensten-block{ height: 350px; text-align: center; color: #ffffff; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; background-size: cover; background-repeat: no-repeat; background-position: center; transition: .3s ease;}
 .diensten .col-lg-3 .diensten-block p { height: 54px; padding-top: 136px; padding-bottom: 214px;}
 .diensten .col-lg-3 .diensten-block p { background-color: rgba(0, 0, 0, .3);}
+
+/*diensten pagina */
+.diensten-single { margin-top: 150px; margin-bottom: 150px;}
+.diensten-single-box { padding: 25px 200px 75px 6px;}
+.diensten-single-right .diensten-single-box {padding: 25px 90px 75px 6px; margin-left: 190px;}
+.diensten-single-right h2 {margin-left: 185px;}
+.diensten-single-box img { width: 425px; height: 425px; position: absolute; margin-left: -460px; margin-top: -125px; object-fit: cover;}
+.diensten-afbeelding-right img { width: 425px; height: 425px; position: absolute; right: -400px; top: 0; margin-top: -50px; object-fit: cover;}
+.diensten-single .portfolio-image-mobile { display: none;}
+.diensten-prijs { font-weight:bold; font-size: 25px; font-family: 'Open Sans', sans-serif; }
+.diensten-single .balk { position: absolute; z-index: -10; height: 355px; margin-top: 0px; margin-left: 16px; background-color: #EDDBCC;}
+.diensten-single .col-md-7 .balk { margin-left: 0;}
+.scrollto-button { display: none;}
+
+@media screen and (max-width: 768px) {
+.diensten-afbeelding-right img { right: -370px; }
+.diensten-single-box { padding: 25px 0px 75px 6px; }
+.diensten-single-right .diensten-single-box { padding: 25px 20px 75px 6px; margin-left: 0;}
+.diensten-single-right h2 { margin-left: 0px;}
+.scrollto-button { display: inline; }
+}
+
+@media screen and (max-width: 767px) {
+.diensten-single { margin-bottom: 220px; }
+.diensten-afbeelding-right img { width: 250px; height: 250px; right: 0px; margin-top: 250px;}
+.diensten-single-box img { width: 250px; height: 250px; right: 0px; margin-top: 250px; }
+}
+
+@media screen and (max-width: 834px) {
+.diensten-single-right .diensten-single-box { padding: 0px 0px 75px 0px; margin-left: 0px;}
+.diensten-single-right h2 { margin-left: 0px;}
+}
+
+@media screen and (max-width: 515px) {
+.diensten-single { margin-top: 0; margin-bottom: 0; }
+.diensten-single:nth-child(odd) .col-md-7 { background-color: #EDDBCC;}
+.diensten-single-box { padding: 0; }
+.diensten-single-box { padding: 0px 0px 75px 0px; }
+.diensten-single-right .diensten-single-box { padding: 0px 0px 75px 0px; }
+.diensten-single .row { margin-right: 0;}
+.diensten-single-right .row { margin-right: 0; }
+.diensten-afbeelding-right img { display: none; }
+.diensten-single-box img { display: none; }
+.diensten-single .portfolio-image-mobile { display: block !important; margin-bottom: 40px !important; margin-top: 25px; }
+.diensten-single .balk { display: none; }
+}
 
 
 /* portfolio area */
