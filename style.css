@@ -37,9 +37,17 @@ p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sa
 .standard-button::after { font-family: "Font Awesome 5 Free"; font-weight: 900; content:"\f105"; margin-left: 25px;}
 
 /* navigation area */
-.navbar { background: transparent;}
 .overlaynav-toggle:focus { outline: 0;}
-.fa-bars {font-size: 30px;  }
+.fa-bars {font-size: 30px; }
+
+.navbar { color:black; background-color: transparent!important; box-shadow: none !important;}
+.sidenav-toggle { padding: .25rem .75rem; font-size: 1.4rem; line-height: 1; background-color: transparent; border: 1px solid transparent; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-radius: .25rem; outline:none !important; color: white;} 
+.sidenav-toggle::-moz-focus-inner { border: 0 !important;}
+.sidenav-toggle .fa-times { display: none;}
+.post-type-archive-portfolio .navbar { background-color: rgba(255, 255, 255, 0.9) !important; box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1) !important;}
+.post-type-archive-portfolio .navbar .sidenav-toggle { color: black;}
+.scrolling .navbar { background-color: rgba(255, 255, 255, 0.9) !important; box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1) !important;}
+.scrolling .navbar .sidenav-toggle { color:black !important;}
 
 /* header area */
 #header { background-size: cover; background-repeat: no-repeat; background-position: center; text-transform: uppercase; text-align: center; color: #ffffff; margin-top: -56px; height: 100vh;}
@@ -47,6 +55,32 @@ p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sa
 .header { position: absolute; top: 40%; left: 0px; right: 0px;}
 .header h1 { margin: 0 auto; width: 50%; padding: 20px; letter-spacing: 15px; border: 2px solid #ffffff; }
 .header-lead { font-size: 20px; padding-top: 15px; letter-spacing: 5px; }
+
+/* Side nav menu */
+.sidenav { height: 100%; width: 0; position: fixed; z-index: 1; top: 0; right: 0; background-color: #EDDBCC; overflow-x: hidden; transition: 0.5s; padding-top: 60px; text-align: right;}
+.sidenav .sidenav-content a { padding: 8px 0px 8px 6px;; text-decoration: none; font-size: 25px; display: block; transition: 0.3s;}
+.sidenav i { color: white; padding: 8px 0px 8px 6px;; font-size: 25px;}
+.sidenav-content{ margin-right: 10px;}
+.sidenav-content-icons { margin-right: 18px;}
+#main-content{ transition: margin-right .5s;}
+.open-menu #sidenav-menu { width: 250px;}
+.open-menu #main-content { margin-right: 250px;}
+.open-menu .sidenav-toggle { z-index: 25;}
+.open-menu .sidenav-toggle .fa-bars {display: none;}
+.open-menu .sidenav-toggle .fa-times { display: block; font-size: 1.9rem}
+  
+@media screen and (max-width: 500px) {
+    .sidenav i { font-size: 35px; }
+    .sidenav-content-icons .fa-instagram { margin-right: 20px;}
+    .open-menu #sidenav-menu { width: 200px;}
+    .open-menu #main-content { margin-right: 200px;}
+  }
+  
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a, .sidenav i {font-size: 18px;}
+  }
 
 /* aboutme area */
 #aboutme { background-color: #EDDBCC; padding: 75px 0;}
@@ -160,6 +194,17 @@ ul.footer-text li a:hover { text-decoration: none;}
 /* sticky knop */
 .page-id-13 .sticky-cta-content, .page-id-13 #sticky-toggle{ visibility: hidden!important; display: none!important;}
 
+/* overige code */
+.portfolio-single-text { text-align:center;}
+.sticky-cta { position: fixed; right: 20px; bottom: 20px; z-index: 99999;}
+div#sticky-toggle { background-color: black; width: 40px; height: 40px; padding: 10px; border-radius: 5px; cursor: pointer; position: fixed; right: 10px; bottom: 10px;}
+div#sticky-toggle i { color: white; font-size: 20px;}
+.sticky-cta-content { background-color: black; color: white; padding: 15px 20px 30px 20px; margin-bottom: 5px; border-radius: 5px; position: fixed; right: 10px; display: none; bottom: 50px; opacity: 0; transition: opacity 1s;}
+.sticky-cta-content .standard-button { border: 2px solid white; color: white;}
+p.sticky-title { font-weight: bold; font-family: 'Open Sans'; font-size: 25px; margin-bottom: 20px;}
+.sticky-cta-content .standard-button:hover { background-color: white; color: black;}
+.sticky-cta-content.sticky-active { display: block; opacity: 1;}
+
 /* Responsive sticky knop */
 @media only screen and (max-width: 600px){ .sticky-cta-content, #sticky-toggle{ visibility: hidden!important; display: none!important;}}
 
@@ -217,6 +262,8 @@ ul.footer-text li a:hover { text-decoration: none;}
         .portfolio-image-mobile { display: block; width: 50%; margin-top: 50px;}
         #portfolio .col-lg-5 { padding-right: 15px;}
         img.about-me-picture-mobile { display: block; width: 100%; margin-top: 75px;}
+        .diensten .col-lg-3 .diensten-block{ margin-bottom: 15px;}
+        .diensten .col-lg-3 .diensten-block p { padding-top: 175px; padding-bottom: 175px;}
     }
     
     @media only screen and (max-width: 465px){
@@ -240,4 +287,10 @@ ul.footer-text li a:hover { text-decoration: none;}
     @media only screen and (max-width:767px){
         .contact .col-md-7 { border-right: none; border-bottom: 1px solid rgba(0, 0, 0, .1); padding-right: 15px; padding-bottom: 50px;}
         .contact .col-md-5 { padding-left: 15px; padding-top: 50px;}
+        #aboutme .col-lg-6 p { padding-right: 15px;}
+    }
+
+    @media only screen and (max-width: 1400px){
+        .reviews-box { padding: 25px 15px 75px 0px; }
+        #reviews .col-md-7 .container { margin-left: 75px;}
     }
