@@ -51,10 +51,10 @@
                 <p>Voorbeeldlaan 57<br>
                     1742 RL<br>
                     Amsterdam</p><br>
-                <p><i class="far fa-envelope"></i> info@purefaceart.nl</p>
-                <p><i class="fas fa-phone phone-upside"></i> 0612345678</p>
-                <p><i class="fab fa-instagram"></i> /purefaceart</p>
-                <p><i class="fab fa-facebook-square"></i> /purefaceart</p>
+                <p><a href="mailto:purefaceart@gmail.com"> <i class="far fa-envelope"></i> info@purefaceart.nl </a></p>
+                <p><a href="callto:0683695905"><i class="fas fa-phone phone-upside"></i> 0683695905</a></p>
+                <p><a href="https://www.instagram.com/purefaceart/"><i class="fab fa-instagram"></i> /purefaceart </a></p>
+                <p><a href="https://www.facebook.com/xxAshh"><i class="fab fa-facebook-square"></i> /purefaceart </a></p>
             </div>
         </div>
     </div>
