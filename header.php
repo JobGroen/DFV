@@ -40,8 +40,8 @@
 		            ) );
                     ?>
                     <div class="sidenav-content-icons">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/purefaceart/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/xxAshh"><i class="fab fa-facebook-square"></i></a>
                     </div>
                 </div>
             </div>
