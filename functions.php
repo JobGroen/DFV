@@ -61,3 +61,24 @@ register_nav_menus(
 /* Image size */
 add_image_size('smallest', 300, 300, true);
 add_image_size('largest', 800, 800, true);
+
+
+/* purge cache after new portfolio item */
+$custom_post_types = array( "portfolio" => "portfolio");
+$max_archive_pages = 0;	// 0 == all archive page #s
+
+function post_status( $new_status, $old_status, $post )
+{
+	global $custom_post_types, $max_archive_pages;
+
+	if ( array_key_exists( $post->post_type, $custom_post_types ) && ( $new_status === "publish" || $old_status === "publish" ) )
+	{
+		if ( defined( 'W3TC' ) )
+		{
+                    // Flush everything!
+                    w3tc_flush_all();
+		}
+	}
+}
+add_action(  'transition_post_status',  'post_status', 10, 3 );
+
