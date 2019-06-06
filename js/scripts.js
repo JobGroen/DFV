@@ -72,6 +72,9 @@ $(function () {
     $container.isotope({
         itemSelector: '.photos-item'
     });
+    $container.imagesLoaded().progress( function() {
+        $container.isotope('layout');
+    });
     $select.change(function () {
         var $this = $(this);
 

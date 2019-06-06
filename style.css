@@ -4,6 +4,8 @@ Author: Mediacollege Examengroep C1.1
 Version: 0.1.9
 */
 
+img.logo {max-width: 150px;max-height: 55px;}
+
 /* body */
 body { overflow-x: hidden;}
 
@@ -40,7 +42,8 @@ p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sa
 .overlaynav-toggle:focus { outline: 0;}
 .fa-bars {font-size: 30px; }
 
-.navbar { color:black; background-color: transparent!important; box-shadow: none !important;}
+.navbar { color:black; background-color: transparent!important; box-shadow: none !important; padding-top: 10px; padding-bottom: 10px;}
+.navbar-brand {padding: 0;}
 .sidenav-toggle { padding: .25rem .75rem; font-size: 1.4rem; line-height: 1; background-color: transparent; border: 1px solid transparent; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-radius: .25rem; outline:none !important; color: white;}
 .sidenav-toggle::-moz-focus-inner { border: 0 !important;}
 .sidenav-toggle .fa-times { display: none;}
@@ -50,7 +53,7 @@ p, a, input, textarea, label, li {font-size: 16px; font-family: 'Montserrat', sa
 .scrolling .navbar .sidenav-toggle { color:black !important;}
 
 /* header area */
-#header { background-size: cover; background-repeat: no-repeat; background-position: center; text-transform: uppercase; text-align: center; color: #ffffff; margin-top: -56px; height: 100vh;}
+#header { background-size: cover; background-repeat: no-repeat; background-position: center; text-transform: uppercase; text-align: center; color: #ffffff; margin-top: -76px; height: 100vh;}
 
 .header { position: absolute; top: 40%; left: 0px; right: 0px;}
 .header h1 { margin: 0 auto; width: 50%; padding: 20px; letter-spacing: 15px; border: 2px solid #ffffff; }
@@ -180,23 +183,25 @@ img.about-me-picture{ width: 450px; height: 450px; position: absolute; margin-le
 .diensten-single .col-md-7 .balk { margin-left: 0;}
 .scrollto-button { display: none;}
 
+@media screen and (max-width: 1025px) {
+    .diensten-single-box { padding: 25px 15px 75px 6px;}
+    .diensten-single-right .diensten-single-box { margin-left: 15px;}
+    .diensten-single-right h2 { margin-left: 17px;}
+}
+
 @media screen and (max-width: 768px) {
 .diensten-afbeelding-right img { right: -370px; }
 .diensten-single-box { padding: 25px 0px 75px 6px; }
 .diensten-single-right .diensten-single-box { padding: 25px 20px 75px 6px; margin-left: 0;}
 .diensten-single-right h2 { margin-left: 0px;}
 .scrollto-button { display: inline; }
+.navbar-expand-md>.container, .navbar-expand-md>.container-fluid {padding:0 2px 0 10px;}
 }
 
 @media screen and (max-width: 767px) {
 .diensten-single { margin-bottom: 220px; }
 .diensten-afbeelding-right img { width: 250px; height: 250px; right: 0px; margin-top: 250px;}
 .diensten-single-box img { width: 250px; height: 250px; right: 0px; margin-top: 250px; }
-}
-
-@media screen and (max-width: 834px) {
-.diensten-single-right .diensten-single-box { padding: 0px 0px 75px 0px; margin-left: 0px;}
-.diensten-single-right h2 { margin-left: 0px;}
 }
 
 @media screen and (max-width: 515px) {
@@ -285,6 +290,7 @@ ul.footer-text { padding: 0; margin-top: -10px;}
 ul.footer-text li { list-style-type: none;}
 ul.footer-text li a, ul.footer-text li { color: #d6d3d3; text-decoration: none; font-family: 'Montserrat', sans-serif!important;}
 ul.footer-text li a:hover { text-decoration: none;}
+.footer-logo { max-width: 150px;}
 
 /* copyright area */
 #copyright { background-color: #000000; letter-spacing: 1px; padding: 15px 0;}
@@ -292,12 +298,6 @@ ul.footer-text li a:hover { text-decoration: none;}
 #copyright a { color: #d6d3d3; text-decoration: none; font-size: 13px;}
 #copyright a:hover { color: #d6d3d3; text-decoration: none;}
 
-/*diensten pagina */
-#diensten-single { margin-top: 150px; margin-bottom: 150px; margin-right:15px;}
-#diensten-single .col-md-7 { background-color: #EDDBCC;}
-.diensten-single-box { padding: 25px 300px 75px 0px;}
-#diensten-single .col-md-7 .container { margin-left: 75px;}
-.diensten-single-box img { width: 400px; height: 400px; position: absolute; margin-left: -460px; margin-top: -125px; object-fit: cover;}
 
 /* blog area */
 .blog-leftside {}
@@ -315,10 +315,11 @@ ul.footer-text li a:hover { text-decoration: none;}
 div#sticky-toggle { background-color: black; width: 40px; height: 40px; padding: 10px; border-radius: 5px; cursor: pointer; position: fixed; right: 10px; bottom: 10px;}
 div#sticky-toggle i { color: white; font-size: 20px;}
 .sticky-cta-content { background-color: black; color: white; padding: 15px 20px 30px 20px; margin-bottom: 5px; border-radius: 5px; position: fixed; right: 10px; display: none; bottom: 50px; opacity: 0; transition: opacity 1s;}
-.sticky-cta-content .standard-button { border: 2px solid white; color: white;}
-p.sticky-title { font-weight: bold; font-family: 'Open Sans'; font-size: 25px; margin-bottom: 20px;}
-.sticky-cta-content .standard-button:hover { background-color: white; color: black;}
+.sticky-cta-content .standard-button { border: 2px solid white; color: white; padding: 10px 20px;}
+p.sticky-title {font-weight: bold;font-family: 'Open Sans';font-size: 20px;margin-bottom: 20px;}
+.sticky-cta-content .standard-button:hover {background-color: white;color: black !important;}
 .sticky-cta-content.sticky-active { display: block; opacity: 1;}
+
 
 /* Responsive sticky knop */
 @media only screen and (max-width: 600px){ .sticky-cta-content, #sticky-toggle{ visibility: hidden!important; display: none!important;}}
@@ -333,6 +334,8 @@ p.sticky-title { font-weight: bold; font-family: 'Open Sans'; font-size: 25px; m
     .blog-rightside { height: auto; margin-top: 25px;}
     .blog-righttext { padding: 0px 15px 15px 15px;}
     .blog-leftside .img-fluid { height: auto;}
+	.single-post-container { padding-top:5%;padding:0; }
+	.blog-nav {display:none;}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){
     .blog-rightside { height: 345px;}
@@ -405,7 +408,3 @@ p.sticky-title { font-weight: bold; font-family: 'Open Sans'; font-size: 25px; m
         #aboutme .col-lg-6 p { padding-right: 15px;}
     }
 
-    @media only screen and (max-width: 1400px){
-        .reviews-box { padding: 25px 15px 75px 0px; }
-        #reviews .col-md-7 .container { margin-left: 75px;}
-    }
