@@ -4,7 +4,7 @@
     <div class="container pt-5 pb-5">
         <div class="row">
             <div class="col-md-4">
-                <img src="#" alt="LOGO ASHA" class="footer-logo">
+                <img src="https://daimond.jobgroen.nl/wp-content/uploads/2019/06/logo-pure-face-art.png" alt="LOGO ASHA" class="footer-logo">
             </div>
 
             <div class="col-md-4">
@@ -31,7 +31,7 @@
 
 <div id="copyright">
     <div class="container">
-    <p>&copy;2019 Pure Face Art | <a href="/sitemap.xml" target="_blank">Sitemap</a></p>
+    <p>&copy;2019 Pure Face Art | <a href="/sitemap" target="_blank">Sitemap</a></p>
     </div>
 </div>
 
