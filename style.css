@@ -326,10 +326,10 @@ p.sticky-title {font-weight: bold;font-family: 'Open Sans';font-size: 20px;margi
 @media only screen and (max-width: 600px){ .sticky-cta-content, #sticky-toggle{ visibility: hidden!important; display: none!important;}}
 
 /* Responsive headers fix */
-@media only screen and (max-width: 500px){ .page-id-95 .header h1, .page-id-13 .header h1 { font-size: 30px; width: 90%;}}
-@media only screen and (min-width: 501px) and (max-width: 549px){ .page-id-95 .header h1, .page-id-13 .header h1 { font-size: 45px; width: 90%;}}
 @media screen and (max-width: 893px){ .header { top: 35%;} .header h1 { width: 80%;}}
-@media screen and (max-width: 700px){  .header h1 { width: 90%;}}
+@media screen and (max-width: 700px){  .header h1 { width: 90%; letter-spacing: 10px; font-size: 50px;}}
+@media only screen and (min-width: 501px) and (max-width: 549px){ .header h1 { font-size: 45px;}}
+@media only screen and (max-width: 500px){ .header h1 { font-size: 30px;}}
 
  /* blog responsive */
 @media only screen and (max-width: 767px){
