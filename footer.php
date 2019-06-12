@@ -4,7 +4,7 @@
     <div class="container pt-5 pb-5">
         <div class="row">
             <div class="col-md-4">
-                <img src="https://daimond.jobgroen.nl/wp-content/uploads/2019/06/logo-pure-face-art.png" alt="LOGO ASHA" class="footer-logo">
+                <img src="/wp-content/uploads/2019/06/logo-pure-face-art-1.png" alt="LOGO ASHA" class="footer-logo">
             </div>
 
             <div class="col-md-4">

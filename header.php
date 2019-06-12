@@ -22,7 +22,7 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <a class="navbar-brand" href="/home">
-                <img class="logo" src="https://daimond.jobgroen.nl/wp-content/uploads/2019/06/logo-pure-face-art.png" alt="pure face art logo">
+                <img class="logo" src="/wp-content/uploads/2019/06/logo-pure-face-art-1.png" alt="pure face art logo">
                 </a>
                 <button class="sidenav-toggle" type="button">
                     <i class="fas fa-bars"></i>
