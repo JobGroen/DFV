@@ -44,7 +44,7 @@ if ($message === ''){
 }
 $sender = "contact@jobgroen.nl";
 $content="From: $name \nEmail: $email \nMessage: $message";
-$recipient = "23899@ma-web.nl";
+$recipient = "purefaceart@gmail.com";
 $mailheader = "From: $sender \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Error!");
 print json_encode(array('message' => 'Uw e-mail is verzonden!', 'code' => 1));
